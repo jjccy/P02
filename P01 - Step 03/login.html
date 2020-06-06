@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <!--
+        Website for IAT 339 P01 - Step 03 Check-in - login page
+        Author Jimmy Chu
+        With a lot of help for html entities and css elements from W3schools.com
+        -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/bElements.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+
+    </head>
+    <body>
+        <section class="login-section">
+            <h1>Login</h1>
+
+            <div class="login-div">
+                <form action="/button-type" class="login-form"> 
+                    <label for="login-username">Username</label>
+                    <input type="text" name="username" id="login-username" placeholder="username">
+                    <label for="login-password">Password</label>
+                    <input type="text" name="password" id="login-password"placeholder="password">
+                    <div class="flex-box login-group">
+                        <button type="submit" class="login-button flex-spaceholder-max">Login</button>
+                        <a href="#" class="flex-spaceholder-min">forget my password</a>
+                    </div>
+                    
+                    <button type="submit" class="register-button">register</button>
+                </form>
+            </div>
+        </section> <!-- end of login section -->
+
+    </body>
+
+</html>

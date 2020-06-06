@@ -1,0 +1,147 @@
+.subTitle{
+	border-bottom: 1px solid #888;
+}
+
+.group-filte{
+	padding: 0.5rem 0;
+}
+
+ul.group-content{
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0;
+}
+
+ul.group-content label{
+	font-size: 0.7rem;
+}
+
+.product-section {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	margin: 0;
+}
+
+.product-section {
+	background-color: #efefef;
+}
+
+.left-canvas {
+	flex: 1 1 auto;
+	padding: 0 2rem;
+}
+
+.right-section {
+	flex: 99 3 auto;
+	padding: 0 3rem;
+}
+
+.right-section h2 {
+	color: #d11919;
+}
+
+.title-searchbar{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+
+.title-searchbar p{
+	flex: 999 1 auto;
+
+	padding: 0;
+
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+
+/* 
+following code is inspired by Ason
+
+Example:
+https://stackoverflow.com/questions/48570109/layout-a-flex-box-similar-to-a-table
+https://jsfiddle.net/sjmqwafw/2/
+*/
+
+.tbl {
+  	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+  	flex-direction: column;
+}
+.row {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	align-items: center;
+}
+.cell {
+	flex: 4;
+}
+.cell:nth-child(1) {
+	flex: 14;
+}
+.cell:nth-child(6) {
+  	flex: 6;
+}
+.cell.span2 {
+	flex: 8 24px; 
+}
+
+.cell.span3 {
+	flex: 12 36px; 
+}
+.row:first-child .cell {
+ 	display: flex;
+  	align-items: center;
+}
+.row .cell {
+  	padding: .3rem;
+  	box-sizing: border-box;
+}
+
+.cell img {
+	height: 2.8rem;
+	width: auto;
+
+	padding: 0 2rem 0 0;
+}
+
+.cell p{
+	margin: 0;
+	padding: 0;
+
+	font-size: 0.85rem;
+}
+
+.cell a{
+	color: #000;
+	text-decoration: none;
+
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+
+.cell a:hover, .cell a:hover {
+	color: #d11919;
+}
+
+.product-sorter {
+	font-size: 0.7rem;
+	color: #555;
+	text-decoration: none;
+
+	padding: 2rem 0 1rem 0!important;
+
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+
+.product-sorter:hover, .product-sorter:focus {
+	border-bottom: 1px solid #d11919;
+}

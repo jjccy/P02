@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Po1 - Step 03</title>
+    <!--
+    Website for IAT 339 P01 - Step 03 Check-in
+    Author Jimmy Chu
+    With a lot of help for html entities and css elements from W3schools.com
+    -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bElements.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <h1>P01 - Step 03 Check-in</h1>
+
+      <nav><!-- links to different section of the page -->
+        <a href="#basic-interactive" class="main-nav">Basic Interactive elements</a>
+        <a href="#text-style" class="main-nav">Text Styling</a>  
+        <a href="#MPR" class="main-nav">Modular Pattern Elements</a> 
+        <a href="citation.html" target="_blank" class="main-nav">Citation</a>
+      </nav>
+
+      <section id="some-links">
+        <h2>Links to previous process week check-in</h2>
+        <a href="https://www.sfu.ca/~zca80/IAT%20339/P01%20-%20Step%2001/" target="_blank" class="inText-link">Link to P01 step 01</a>
+        <a href="https://www.sfu.ca/~zca80/IAT%20339/P01%20-%20Step%2002/" target="_blank" class="inText-link">Link to P01 step 02</a>
+
+        <p>
+          Numbers of unique layout: 5 (maybe 6)
+        </p>
+      </section> <!--end of some-links section-->
+      
+
+      <section id="style-guide">
+        <h2>Style guide and Pattern Library</h2>
+
+        <h3 class="h3-heading" id="basic-interactive">Basic Interactive elements</h3>
+
+        <ol>
+
+          <li>  
+            <p>
+              an in-text link <a href="#" class="bE-link">in-text link</a><br>
+            </p>         
+            <div class="code-holder">
+              <code>
+                &lt;a href="#" class="bE-link"&gt;in-text link&lt;/a&gt;
+              </code>
+            </div>
+          </li>
+          <li>
+            <p>
+              call action button <button type="submit" name="submit" class="bE-button">Button</button>
+            </p>
+            <div class="code-holder">
+              <code>
+                &lt;button type="submit" class="bE-button"&gt;Button&lt;/button&gt;
+              </code>
+            </div>
+          </li>
+
+          <li>
+            <p>
+              a text input field, a label, a submit and reset button for forms
+            </p>
+            <form action="/button-type" class="bE-form"> 
+              <label for="name" class="bE-label">Name</label><br>
+              <input type="text" id="name" class="bE-input-text"><br>
+              <button type="reset" class="bE-button">Reset the form!</button><br>
+              <button type="submit" class="bE-button" disabled>Submit</button>
+            </form><br>
+
+            <div class="code-holder">
+              <code>
+                &lt;form action="/button-type" class="bE-form"&gt;<br>
+                  &nbsp;&nbsp;&lt;label for="name" class="bE-label"&gt;Name&lt;/label&gt;&lt;br&gt;<br>
+                  &nbsp;&nbsp;&lt;input type="text" id="name" class="bE-input-text"&gt;&lt;br&gt;<br>
+                  &nbsp;&nbsp;&lt;button type="reset" class="bE-button"&gt;Reset the form!&lt;/button&gt;&lt;br&gt;<br>
+                  &nbsp;&nbsp;&lt;button type="submit" class="bE-button" disabled&gt;Submit&lt;/button&gt;<br>
+                &lt;/form&gt;&lt;br&gt;
+              </code>
+            </div>
+          </li>
+
+          <li>
+            <p>
+              website colour swatches
+            </p>
+
+            <label for="color-swatches" class="bE-label">Color Swatches</label>
+            <select class="color-swatches" id="color-swatches">
+              <option value="#efefef" style="background-color:#efefef;">#efefef</option>
+              <option value="#d11919" style="background-color:#d11919;">#d11919</option>
+              <option value="#5e5e5e" style="background-color:#5e5e5e;">#5e5e5e</option>
+            </select><br>
+
+            <div class="code-holder">
+              <code>
+                &lt;select class="color-swatches"&gt;<br>
+                  &nbsp;&nbsp;&lt;option value="#efefef" style="background-color:#efefef;"&gt;#efefef&lt;/option&gt;<br>
+                  &nbsp;&nbsp;&lt;option value="#d11919" style="background-color:#d11919;"&gt;#d11919&lt;/option&gt;<br>
+                  &nbsp;&nbsp;&lt;option value="#5e5e5e" style="background-color:#5e5e5e;"&gt;#5e5e5e&lt;/option&gt;<br>
+                &lt;/select&gt;
+              </code>
+            </div>          
+          </li>
+
+        </ol>
+
+
+        <h3 class="h3-heading" id="text-style">Text styling</h3>
+
+        <ol>
+
+          <li>
+            <p>
+              Three levels of heading
+            </p>
+            <h1>h1 heading</h1>
+            <h2>h2 heading</h2>
+            <h3>h3 heading</h3>
+            <h4>h4 heading</h4>
+
+            <div class="code-holder">
+              <code>
+                &lt;h1&gt;h1 heading&lt;/h1&gt;<br>
+                &lt;h2&gt;h2 heading&lt;/h2&gt;<br>
+                &lt;h3&gt;h3 heading&lt;/h3&gt;<br>
+                &lt;h4&gt;h4 heading&lt;/h4&gt;
+              </code>
+            </div>
+          </li>
+
+          <li>
+            <p>
+              A paragraph
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              bulletted lists
+            </p>
+              <ul class="clear-list">
+                <li>
+                  bulletted list
+                </li>
+                <li>
+                  bulletted list
+                </li>
+                <li>
+                  bulletted list
+                </li>
+              </ul><br>
+
+            <div class="code-holder">
+              <code>
+                &lt;ul class="clear-list"&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;bulletted list<br>
+                  &nbsp;&nbsp;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;bulletted list<br>
+                  &nbsp;&nbsp;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;bulletted list<br>
+                  &nbsp;&nbsp;&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
+              </code>
+            </div>
+          </li>
+
+          <li>
+            <p>
+              numbered lists
+            </p>
+              <ol class="clear-list">
+                <li>
+                  numbered list
+                </li>
+                <li>
+                  numbered list
+                </li>
+                <li>
+                  numbered list
+                </li>
+              </ol><br>
+
+            <div class="code-holder">
+              <code>
+                &lt;ol class="clear-list"&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;numbered list<br>
+                  &nbsp;&nbsp;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;numbered list<br>
+                  &nbsp;&nbsp;&lt;/li&gt;<br>
+                  &nbsp;&nbsp;&lt;li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;numbered list<br>
+                  &nbsp;&nbsp;&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+              </code>
+            </div>       
+          </li>
+
+        </ol>
+
+        <h3 class="h3-heading" id="MPR">Modular Pattern Elements</h3>
+
+        <ul>
+          <li>
+            <a href="main-nav.html" target="_blank" class="inText-link">main navigation module</a>
+
+            <div class="code-holder">
+              <code>
+                &lt;div class="main-nav-holder"&gt;<br>
+                  &nbsp;&nbsp;&lt;div class="main-nav-top"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="main-nav-top-1"&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/temporary-logo.png" alt="temporary design's temporary logo" class="logo"&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="main-nav-top-2"&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="main-search"&gt;&lt;/label&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="search" placeholder="Search..." class="main-nav-search-bar"&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="bE-link login main-nav-box"&gt;Login&lt;/a&gt;<br>
+                  &nbsp;&nbsp;&lt;/div&gt;<br>
+                  &nbsp;&nbsp;&lt;div class="main-nav-bottom"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;CPU&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;CPU Cooler&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;GPU&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;Motherboard&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;Memory&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;Storage&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;Power Supply&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;Case&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="flex-spaceholder-max"&gt;&lt;/span&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="main-nav-bottom-item main-nav-box"&gt;Check out the best deal for this week&lt;/a&gt;<br>
+                  &nbsp;&nbsp;&lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+              </code>
+            </div>
+          </li>
+
+          <li>
+            <a href="login.html" target="_blank" class="inText-link">a Login page</a>
+
+            <div class="code-holder">
+              <code>
+                &lt;section class="login-section"&gt;<br>
+                  &nbsp;&nbsp;&lt;h2&gt;Login&lt;/h2&gt;<br>
+                  <br>
+                  &nbsp;&nbsp;&lt;div class="login-div"&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;form action="/button-type" class="login-form"&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="login-username"&gt;Username&lt;/label&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="username" id="login-username" placeholder="username"&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="login-password"&gt;Password&lt;/label&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="password" id="login-passwrod" placeholder="password"&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="flex-box login-group"&gt;<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="login-button flex-spaceholder-max"&gt;Login&lt;/button&gt;<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="flex-spaceholder-min"&gt;forget my password&lt;/a&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                          <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="register-button"&gt;register&lt;/button&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
+                  &nbsp;&nbsp;&lt;/div&gt;<br>
+                &lt;/section&gt; &lt;!-- end of login section --&gt;
+              </code>
+            </div>
+          </li>
+
+          <li>
+            <a href="product-list.html" target="_blank" class="inText-link">a product detailed listing</a>
+
+            <div class="code-holder">
+              <code>
+      &lt;section class="product-section"&gt;
+      <br>
+      <br>    &lt;div class="left-canvas"&gt;
+      <br>        &lt;div class="subTitle"&gt;
+      <br>            &lt;div class="subTitle-header"&gt;
+      <br>                &lt;h3&gt;Filters&lt;/h3&gt;
+      <br>            &lt;/div&gt;
+      <br>        &lt;/div&gt;
+      <br>
+      <br>        &lt;div class="group-filter group"&gt;
+      <br>            &lt;h4&gt;Manufacturer&lt;/h4&gt;
+      <br>            &lt;ul class="group-content"&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;be quiet!&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Cooler Master&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Corsair&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Noctua&lt;/label&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;NZXT&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>            &lt;/ul&gt;
+      <br>        &lt;/div&gt;
+      <br>
+      <br>        &lt;div class="group-filter group"&gt;
+      <br>            &lt;h4&gt;Manufacturer&lt;/h4&gt;
+      <br>            &lt;ul class="group-content"&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;be quiet!&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Cooler Master&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Corsair&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Noctua&lt;/label&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;NZXT&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>            &lt;/ul&gt;
+      <br>        &lt;/div&gt;
+      <br>
+      <br>        &lt;div class="group-filter group"&gt;
+      <br>            &lt;h4&gt;Manufacturer&lt;/h4&gt;
+      <br>            &lt;ul class="group-content"&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;be quiet!&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Cooler Master&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Corsair&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;Noctua&lt;/label&gt;
+      <br>                &lt;li&gt;
+      <br>                    &lt;input type="checkbox"&gt;
+      <br>                    &lt;label&gt;NZXT&lt;/label&gt;
+      <br>                &lt;/li&gt;
+      <br>            &lt;/ul&gt;
+      <br>        &lt;/div&gt;
+      <br>    &lt;/div&gt; &lt;!-- end of left canvas --&gt;
+      <br>
+      <br>    &lt;div class="right-section"&gt;
+      <br>        &lt;div class="subTitle"&gt;
+      <br>            &lt;h2&gt;CPU&lt;/h2&gt;
+      <br>            &lt;div class="title-searchbar"&gt;
+      <br>                &lt;p&gt;1000 Compatible Products&lt;/p&gt;
+      <br>                &lt;div class="searchbar flex-spaceholder-min"&gt;
+      <br>                    &lt;button type="submit"&gt;&lt;/button&gt;
+      <br>                    &lt;input type="text" name="search" placeholder="Search..."&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;
+      <br>        &lt;/div&gt;
+      <br>
+      <br>&lt;!--
+      <br>following code is inspired by Ason
+      <br>
+      <br>Example:
+      <br>https://stackoverflow.com/questions/48570109/layout-a-flex-box-similar-to-a-table
+      <br>https://jsfiddle.net/sjmqwafw/2/
+      <br>--&gt;
+      <br>            
+      <br>        &lt;div class="tbl"&gt;
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;Name&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;Core Count&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;Core Clock&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;Boost Clock&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;TPD&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;Intergrade Graphics&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;SMT&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;Rating&lt;/a&gt;
+      <br>                &lt;a href="#" class="cell product-sorter"&gt;Price&lt;/a&gt;
+      <br>            &lt;/div&gt;
+      <br>
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;a href="#" class="cell bold-text flex-box"&gt;
+      <br>                        &lt;img src="img/temp-product-image.jpg" alt="a temporary product image"&gt;
+      <br>                        &lt;p class="bold-text flex-spaceholder-min"&gt;Intel Core i9-9960X&lt;/p&gt;
+      <br>                    &lt;/a&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;16&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;3.1 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;4.4 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;165 W&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;None&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;Yes&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;5 stars&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p class="bold-text"&gt;$1500.00&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;
+      <br>
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;a href="#" class="cell bold-text flex-box"&gt;
+      <br>                        &lt;img src="img/temp-product-image.jpg" alt="a temporary product image"&gt;
+      <br>                        &lt;p class="bold-text flex-spaceholder-min"&gt;Intel Core i9-9960X&lt;/p&gt;
+      <br>                    &lt;/a&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;16&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;3.1 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;4.4 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;165 W&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;None&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;Yes&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;5 stars&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p class="bold-text"&gt;$1500.00&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;<br>
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;a href="#" class="cell bold-text flex-box"&gt;
+      <br>                        &lt;img src="img/temp-product-image.jpg" alt="a temporary product image"&gt;
+      <br>                        &lt;p class="bold-text flex-spaceholder-min"&gt;Intel Core i9-9960X&lt;/p&gt;
+      <br>                    &lt;/a&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;16&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;3.1 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;4.4 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;165 W&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;None&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;Yes&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;5 stars&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p class="bold-text"&gt;$1500.00&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;<br>
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;a href="#" class="cell bold-text flex-box"&gt;
+      <br>                        &lt;img src="img/temp-product-image.jpg" alt="a temporary product image"&gt;
+      <br>                        &lt;p class="bold-text flex-spaceholder-min"&gt;Intel Core i9-9960X&lt;/p&gt;
+      <br>                    &lt;/a&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;16&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;3.1 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;4.4 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;165 W&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;None&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;Yes&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;5 stars&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p class="bold-text"&gt;$1500.00&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;<br>
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;a href="#" class="cell bold-text flex-box"&gt;
+      <br>                        &lt;img src="img/temp-product-image.jpg" alt="a temporary product image"&gt;
+      <br>                        &lt;p class="bold-text flex-spaceholder-min"&gt;Intel Core i9-9960X&lt;/p&gt;
+      <br>                    &lt;/a&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;16&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;3.1 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;4.4 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;165 W&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;None&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;Yes&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;5 stars&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p class="bold-text"&gt;$1500.00&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;<br>
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;a href="#" class="cell bold-text flex-box"&gt;
+      <br>                        &lt;img src="img/temp-product-image.jpg" alt="a temporary product image"&gt;
+      <br>                        &lt;p class="bold-text flex-spaceholder-min"&gt;Intel Core i9-9960X&lt;/p&gt;
+      <br>                    &lt;/a&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;16&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;3.1 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;4.4 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;165 W&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;None&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;Yes&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;5 stars&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p class="bold-text"&gt;$1500.00&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;<br>
+      <br>            &lt;div class="row group"&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;a href="#" class="cell bold-text flex-box"&gt;
+      <br>                        &lt;img src="img/temp-product-image.jpg" alt="a temporary product image"&gt;
+      <br>                        &lt;p class="bold-text flex-spaceholder-min"&gt;Intel Core i9-9960X&lt;/p&gt;
+      <br>                    &lt;/a&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;16&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;3.1 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;4.4 GHz&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;165 W&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;None&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;Yes&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p&gt;5 stars&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>                &lt;div class="cell"&gt;
+      <br>                    &lt;p class="bold-text"&gt;$1500.00&lt;/p&gt;
+      <br>                &lt;/div&gt;
+      <br>            &lt;/div&gt;
+      <br>
+      <br>        
+      <br>    &lt;/div&gt; &lt;!-- end of right section --&gt;
+      <br>    
+      <br>&lt;/section&gt; &lt;!-- end of product section --&gt;
+              </code>
+          </div>
+          </li>
+        </ul>
+
+
+      </section><!-- end of style-guide section -->
+    </div> <!-- end of body-wrapper -->
+  </body>
+</html>
