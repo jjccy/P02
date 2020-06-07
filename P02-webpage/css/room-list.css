@@ -1,0 +1,78 @@
+#product-page {
+  padding: 6rem 5rem;
+  background-color: #EEE;
+}
+
+.room-selection {
+
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  margin-top: 3.5rem;
+}
+
+.room-selection-button {
+  border: 2px solid black;
+  padding: 1.05rem;
+  flex-basis: 15%;
+  text-align: center;
+
+  text-decoration: none;
+  color: black;
+
+  transition-duration: .5s;
+	transition-property: all;
+  transition-timing-function: ease;
+}
+
+.room-selection-button:hover, .room-selection-button:active {
+  background-color: #1A331E;
+  color: white;
+  border-color: #1A331E;
+}
+
+.room-list {
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  margin-top: 3.5rem;
+}
+
+.rooms {
+  padding: 1.05rem;
+  flex-basis: 45%;
+  padding-bottom: 30%;
+  text-decoration: none;
+  color:white;
+
+  background-image: url(../img/temp-room.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-bottom: 2.5rem;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.rooms:hover, .rooms:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/temp-room.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rooms p{
+  text-align: right;
+}

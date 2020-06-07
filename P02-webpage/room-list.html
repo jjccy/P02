@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Room List</title>
+    <!--
+    Website for IAT 339 P02
+    Author Jimmy Chu, Jay Zhao
+    With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
+    -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="script/main-nav.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bElements.css">
+    <link rel="stylesheet" href="css/main-nav.css">
+    <link rel="stylesheet" href="css/room-list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--
+    insepration of this animation is from css trick:
+    Controlling CSS Animations and Transitions with JavaScript
+    by Zach Saucier
+    https://css-tricks.com/controlling-css-animations-transitions-javascript/
+    -->
+
+    <!-- navgation bar start from here -->
+
+    <div id="navgation-bar">
+      <nav class="main-nav-top flex-box">
+          <a id="call-left" href="#" class="flex-spaceholder-min top-items">&#8801;</a>
+          <div class="flex-spaceholder-max top-items logo"><a href="#" ><img src="img/logo.png" alt="logo image"></a></div>
+          <a href="#" class="flex-spaceholder-min top-items book-button">BOOK NOW</a>
+      </nav>
+      <nav class="main-nav-left flex-box">
+        <div class="flex-box">
+          <div class="flex-spaceholder-max logo"><img src="img/logo.png" alt="logo image"></div>
+          <a id="close-left" href="#" class="flex-spaceholder-min main-nav-item">&#9587</a>
+        </div>
+        <div class="nav-list-holder flex-spaceholder-max">
+          <ul class="nav-list">
+            <li><a href="#" class="main-nav-item">HOME</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="#" class="main-nav-item">ROOMS</a></li>
+            <li><a href="#" class="main-nav-item">GREAT DEALS</a></li>
+            <li><a href="#" class="main-nav-item">RESTAURANTS</a></li>
+            <li><a href="#" class="main-nav-item">PRIVATE EVENTS</a></li>
+            <li><a href="#" class="main-nav-item">CALENDAR</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="#" class="main-nav-item">ABOUT</a></li>
+            <li><a href="#" class="main-nav-item">CANTACT</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+    <!-- navgation bar ends here -->
+
+    <section id="product-page">
+      <h1>ROOMS</h1>
+      <p>
+        Luxury never takes a day off. A stay at DING includes lavish accommodations,
+         24-hour room service, world-class dining,wireless Internet, in-room double whirlpool tubs,
+          butler service, spa hydrotherapy area, nightly turn down service, unlimited phone calls to the Continental U.S.,
+           Canada and landlines in Mexico, and much more.
+            You can never have too much of a good thing.
+             Indulge in an experience you will never forget.
+      </p>
+      <p>
+        Choose your room
+      </p>
+
+      <div class="room-selection flex-box">
+        <a href="#" class="flex-placeholder-max room-selection-button">QUEEN</a>
+        <a href="#" class="flex-placeholder-max room-selection-button">KING</a>
+        <a href="#" class="flex-placeholder-max room-selection-button">DOUBLE</a>
+        <a href="#" class="flex-placeholder-max room-selection-button">LOFT</a>
+        <a href="#" class="flex-placeholder-max room-selection-button">PENTHOUSE</a>
+      </div>
+
+      <div class="room-list flex-box">
+
+        <a href="#" id="room1" class="rooms flex-placeholder-min">
+          <div>
+              <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room2" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room3" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room4" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room5" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room6" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room7" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room8" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room9" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+        <a href="#" id="room10" class="rooms flex-placeholder-min">
+          <div>
+            <p>KING</p>
+          </div>
+        </a>
+
+      </div>
+    </section> <!-- end of product-page section -->
+
+  </body>
+</html>
