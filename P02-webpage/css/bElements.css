@@ -68,6 +68,7 @@ p {
     word-spacing: 0.02rem;
   	line-height: 1.6em;
   	font-size: 0.95rem;
+		font-weight: 300;
 }
 
 img {
