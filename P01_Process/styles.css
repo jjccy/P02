@@ -1,0 +1,14 @@
+body {
+  margin: 35px;
+}
+img {
+  border: 5px solid #000000;
+  max-width: 100%;
+  height: auto;
+}
+.desktop{
+	max-width: 55%
+}
+.phone{
+	max-width:20%;
+}
