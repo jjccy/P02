@@ -96,6 +96,10 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
   padding-right: 12.5rem;
 }
 
+.main-nav-left .logo img {
+  max-height: 4.5rem;
+}
+
 #close-left{
   font-size: 0.9rem;
   font-weight: 100;
