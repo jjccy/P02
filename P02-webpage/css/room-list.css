@@ -51,7 +51,6 @@
   text-decoration: none;
   color:white;
 
-  background-image: url(../img/temp-room.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -65,9 +64,56 @@
   transition: all .5s ease-in-out;
 }
 
-.rooms:hover, .rooms:active {
-  background-color: rgba(0, 0, 0, 0.5);
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/temp-room.jpg);
+#room1, #room6{
+  background-image: url(../img/Loft.jpg);
+}
+
+#room1:hover, #room6:hover{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Loft.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#room2, #room7{
+  background-image: url(../img/Penthhouse.jpg);
+}
+
+#room2:hover, #room7:hover{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Penthhouse.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#room3, #room8{
+  background-image: url(../img/Queen.jpg);
+}
+
+#room3:hover, #room8:hover{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Queen.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#room4, #room9{
+  background-image: url(../img/Suit.jpg);
+}
+
+#room4:hover, #room9:hover{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Suit.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#room5, #room10{
+  background-image: url(../img/Villa.jpg);
+}
+
+#room5:hover, #room10:hover{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Villa.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
