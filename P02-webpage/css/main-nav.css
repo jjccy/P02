@@ -24,11 +24,11 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
 }
 
 .main-nav-top.scroll-up {
-  top: -10rem !important;
+  top: -10em !important;
 }
 
 .main-nav-top .top-items {
-  margin: .5rem 3rem 1.3rem;
+  margin: .5em 3em 1.3em;
   text-align: center;
 
 
@@ -37,22 +37,22 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
 }
 
 #call-left {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 100;
 }
 
 .logo img {
-  max-height: 4rem;
+  max-height: 4em;
   width: auto;
 }
 
 .book-button {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 0.03rem;
-  word-spacing: 0.02rem;
+  letter-spacing: 0.03em;
+  word-spacing: 0.02em;
 
-  padding: .6rem;
+  padding: .6em;
   border: 1px solid white;
 
   transition-duration: .5s;
@@ -76,7 +76,7 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
   flex-direction: column;
   align-items: flex-start;
 
-  padding: 2rem 3rem;
+  padding: 2em 3em;
 
   background: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(0,0,0,0.7) 100%);
   background-color: rgba(0,0,0,0);
@@ -89,19 +89,19 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
 }
 
 .main-nav-left.disappear {
-  left: -25rem !important;
+  left: -25em !important;
 }
 
 .main-nav-left .logo {
-  padding-right: 12.5rem;
+  padding-right: 12.5em;
 }
 
 .main-nav-left .logo img {
-  max-height: 4.5rem;
+  max-height: 4.5em;
 }
 
 #close-left{
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 100;
   color: rgba(255,255,255,0.3);
 
@@ -128,16 +128,16 @@ ul.nav-list{
 }
 
 .main-nav-item {
-  font-size: .95rem;
+  font-size: .95em;
   font-weight: 400;
-	letter-spacing: 0.05rem;
-  word-spacing: 0.05rem;
+	letter-spacing: 0.05em;
+  word-spacing: 0.05em;
   line-height: 2.65em;
 
   text-decoration: none;
   color: rgba(255,255,255,0.8);
 
-  padding: .3rem 0;
+  padding: .3em 0;
 
   transition-duration: .5s;
   transition-property: all;
@@ -147,4 +147,10 @@ ul.nav-list{
 .main-nav-item:hover, .main-nav-item:focus {
     color: white;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  #navgation-bar *{
+    font-size: 40px !important;
+  }
 }
