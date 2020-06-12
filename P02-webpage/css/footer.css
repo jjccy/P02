@@ -148,7 +148,10 @@ footer, footer a {
 
   .icon-section {
     position: static;
-    text-align: left;
     order: 5;
+  }
+
+  .icon-holder {
+    margin-left: -0.88em;
   }
 }
