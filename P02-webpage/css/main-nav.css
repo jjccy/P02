@@ -16,11 +16,11 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
   background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
   background-color: rgba(0,0,0,0);
 
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: top .5s ease-in-out;
+  -moz-transition: top .5s ease-in-out;
+  -ms-transition: top .5s ease-in-out;
+  -o-transition: top .5s ease-in-out;
+  transition: top .5s ease-in-out;
 }
 
 .main-nav-top.scroll-up {
@@ -68,7 +68,7 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
 
 .main-nav-left {
   position: fixed;
-  left: -25rem;
+  left: 0;
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -81,15 +81,15 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
   background: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(0,0,0,0.7) 100%);
   background-color: rgba(0,0,0,0);
 
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -ms-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
 }
 
-.main-nav-left.appear {
-  left: 0 !important;
+.main-nav-left.disappear {
+  left: -25rem !important;
 }
 
 .main-nav-left .logo {
