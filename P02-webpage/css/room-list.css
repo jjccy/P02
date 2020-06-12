@@ -60,6 +60,7 @@
   background-size: cover;
 
   margin: 1em;
+  position: relative;
 
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
@@ -142,14 +143,51 @@
   color: #eee;
   border: none;
 
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  z-index: 2;
+
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .room-button:hover, .room-button:focus {
     text-shadow: 2px 2px 4px #000000;
     color: white;
+}
+
+.room-text-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  color: rgba(0, 0, 0, 0);
+}
+
+.room-text {
+  padding: 3.5em;
+  position: absolute;
+  bottom: 0;
+}
+
+.room-text-holder.shown {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  #product-page * {
+    font-size: 25px;
+  }
+
+  #product-page {
+    padding-top: 10em;
+  }
+
+  .rooms {
+    height: 25vw;
+  }
 }
