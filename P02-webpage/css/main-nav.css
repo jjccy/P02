@@ -149,6 +149,11 @@ ul.nav-list{
     text-decoration: underline;
 }
 
+.language {
+  justify-content: space-between;
+  width: 100%;
+}
+
 @media screen and (max-width: 1000px) {
   #navgation-bar *{
     font-size: 40px !important;
