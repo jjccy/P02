@@ -140,7 +140,7 @@ ul.nav-list{
   padding: .3em 0;
 
   transition-duration: .5s;
-  transition-property: all;
+  transition-property: color;
   transition-timing-function: ease;
 }
 

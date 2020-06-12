@@ -8,6 +8,10 @@ $(document).ready(function() {
     'visibility' : 'hidden'
   });
 
+  $(".main-nav-item").css({
+    'opacity' : '0'
+  });
+
   $("#call-left").click(function(event) {
     event.preventDefault();
     appear = true;
@@ -23,12 +27,15 @@ $(document).ready(function() {
 
     return false;
   });
-  
+
 });
 
 function changeNav() {
-  $(".main-nav-left").css({
+  $(".main-nav-left, .main-nav-item").css({
     'visibility' : 'visible'
+  });
+  $(".main-nav-item").css({
+    'opacity' : '1'
   });
 
   if (appear) {
