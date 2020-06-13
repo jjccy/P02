@@ -78,7 +78,7 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
   z-index: 1;
 
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start !important;
 
   padding: 2em 3em;
 

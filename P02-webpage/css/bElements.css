@@ -45,7 +45,7 @@
 
 
 body {
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif !important;
 }
 
 h1 {
@@ -230,6 +230,9 @@ ol.clear-list{
 #myCarousel{
   height: 100%;
 	width: 100%;
+
+	max-width: 100vw;
+	max-height: 100vh;
 }
 
 #myCarousel img{
