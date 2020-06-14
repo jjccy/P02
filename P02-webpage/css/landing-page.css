@@ -11,25 +11,13 @@
   top: 0;
   bottom: 0;
 
-  padding: 15vh 12vw 3em;
+  padding: 15vh 12vw 0;
   color: #EEE;
   background-color: rgba(0,0,0,0.05);
 
   text-shadow: 1em 1em 1em #1A331E;
 
   visibility: hidden;
-}
-
-.mobile-title > h1 {
-  font-size: 15em;
-  font-weight: 800;
-}
-
-.mobile-title > h2 {
-  padding-top: 1em;
-
-  font-size: 10em;
-  font-weight: 100;
 }
 
 .main-nav-top {
@@ -44,5 +32,17 @@
 
   .mobile-title {
     visibility: visible;
+  }
+
+  .mobile-title > h1 {
+    font-size: 15em;
+    font-weight: 800;
+  }
+
+  .mobile-title > h2 {
+    padding-top: 1em;
+
+    font-size: 10em;
+    font-weight: 100;
   }
 }
