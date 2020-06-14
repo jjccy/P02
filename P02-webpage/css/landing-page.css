@@ -1,4 +1,48 @@
 #wrapper {
+  position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+.mobile-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  padding: 15vh 12vw 3em;
+  color: #EEE;
+  background-color: rgba(0,0,0,0.05);
+
+  text-shadow: 1em 1em 1em #1A331E;
+
+  visibility: hidden;
+}
+
+.mobile-title > h1 {
+  font-size: 15em;
+  font-weight: 800;
+}
+
+.mobile-title > h2 {
+  padding-top: 1em;
+
+  font-size: 10em;
+  font-weight: 100;
+}
+
+.main-nav-top {
+  background: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .carousel-caption {
+    visibility: hidden;
+  }
+
+  .mobile-title {
+    visibility: visible;
+  }
 }

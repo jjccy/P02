@@ -30,6 +30,22 @@ $(document).ready(function() {
 
 });
 
+// $(window).scroll(function() {
+//   var height = $(window).scrollTop();
+//   var shade = 'linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%)'
+//
+//   if (height > 100) {
+//     $('.main-nav-top').css({
+//       'background' : shade
+//     });
+//   } else {
+//     $('.main-nav-top').css({
+//       'background' : "none"
+//     });
+//   }
+//
+// });
+
 function changeNav() {
   $(".main-nav-left, .main-nav-item").css({
     'visibility' : 'visible'

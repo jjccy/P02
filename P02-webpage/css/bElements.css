@@ -27,19 +27,19 @@
 
 @media screen and (min-width: 1050px) {
   *{
-    font-size: 14px;
+    font-size: 10.5pt;
   }
 }
 
 @media screen and (min-width: 1100px) {
   *{
-    font-size: 15px;
+    font-size: 11pt;
   }
 }
 
 @media screen and (min-width: 1300px) {
   *{
-    font-size: 16px;
+    font-size: 12pt;
   }
 }
 
@@ -236,7 +236,7 @@ ol.clear-list{
 }
 
 #myCarousel img{
-	object-fit: none; /* Do not scale the image */
+	object-fit: cover; /* Maintain its aspect ratio */
 	object-position: center; /* Center the image within the element */
 	height: 100%;
 	width: 100%;
@@ -266,7 +266,7 @@ ol.clear-list{
   background-color: #555555;
 }
 
-.carousel-caption{
+.carousel-caption {
 	position: absolute;
   max-width: 100%;
 	max-height: 100%;
@@ -289,6 +289,7 @@ ol.clear-list{
 }
 
 .carousel-control {
+  z-index: 50;
 	background-image: none !important;
 }
 
