@@ -15,7 +15,7 @@ $(function() {
 
   // Inserting Buttons
   elem.prepend('<div id="left-button" class="flex-spaceholder-min" style="visibility: hidden;"><a href="#"><</a></div>');
-  elem.append('  <div id="right-button" class="flex-spaceholder-min"><a href="#">></a></div>');
+  elem.append('<div id="right-button" class="flex-spaceholder-min"><a href="#">></a></div>');
 
   // Inserting Inner
   items.wrapAll('<div id="inner" />');
@@ -45,25 +45,29 @@ $(function() {
     setVisible($('#right-button'));
     var leftPos = outer.scrollLeft();
     outer.animate({
-      scrollLeft: leftPos - 200
+      scrollLeft: leftPos - 450
     }, 800, function() {
       if ($('#outer').scrollLeft() <= 0) {
         setInvisible($('#left-button'));
       }
     });
+
+    return false;
   });
 
   $('#right-button').click(function() {
     setVisible($('#left-button'));
     var leftPos = outer.scrollLeft();
     outer.animate({
-      scrollLeft: leftPos + 200
+      scrollLeft: leftPos + 450
     }, 800, function() {
       console.log("leftPos: " + leftPos);
       if ($('#outer').scrollLeft() >= (actualWidth - outer.outerWidth(true)) * 0.95) {
         setInvisible($('#right-button'));
       }
     });
+
+    return false;
   });
 
   $(window).resize(function() {
