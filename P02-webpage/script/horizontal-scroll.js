@@ -14,51 +14,56 @@ $(function() {
   var items = elem.children();
 
   // Inserting Buttons
-  elem.prepend('<div id="right-button" style="visibility: hidden;"><a href="#"><</a></div>');
-  elem.append('  <div id="left-button"><a href="#">></a></div>');
+  elem.prepend('<div id="left-button" class="flex-spaceholder-min" style="visibility: hidden;"><a href="#"><</a></div>');
+  elem.append('  <div id="right-button" class="flex-spaceholder-min"><a href="#">></a></div>');
 
   // Inserting Inner
   items.wrapAll('<div id="inner" />');
 
   // Inserting Outer
-  debugger;
   elem.find('#inner').wrap('<div id="outer"/>');
+  $('#outer').addClass('flex-spaceholder-max');
 
   var outer = $('#outer');
+  var actualWidth = 0;
 
   var updateUI = function() {
     var maxWidth = outer.outerWidth(true);
-    var actualWidth = 0;
     $.each($('#inner >'), function(i, item) {
       actualWidth += $(item).outerWidth(true);
     });
 
     if (actualWidth <= maxWidth) {
-      setVisible($('#left-button'));
+      setInvisible($('#right-button'));
     }
   };
   updateUI();
 
 
 
-  $('#right-button').click(function() {
-    var leftPos = outer.scrollLeft();
-    outer.animate({
-      scrollLeft: leftPos - 200
-    }, 800, function() {
-      debugger;
-      if ($('#outer').scrollLeft() <= 0) {
-        setInvisible($('#right-button'));
-      }
-    });
-  });
-
   $('#left-button').click(function() {
     setVisible($('#right-button'));
     var leftPos = outer.scrollLeft();
     outer.animate({
+      scrollLeft: leftPos - 200
+    }, 800, function() {
+      if ($('#outer').scrollLeft() <= 0) {
+        setInvisible($('#left-button'));
+      }
+    });
+  });
+
+  $('#right-button').click(function() {
+    setVisible($('#left-button'));
+    var leftPos = outer.scrollLeft();
+    outer.animate({
       scrollLeft: leftPos + 200
-    }, 800);
+    }, 800, function() {
+      console.log("leftPos: " + leftPos);
+      if ($('#outer').scrollLeft() >= (actualWidth - outer.outerWidth(true)) * 0.95) {
+        setInvisible($('#right-button'));
+      }
+    });
   });
 
   $(window).resize(function() {

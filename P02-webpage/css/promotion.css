@@ -6,22 +6,40 @@
   display: inline-block;
 }
 
-#left-button {
-  float: left;
-  width: 30px;
+#right-button, #left-button  {
+  width: 7em;
   text-align: center;
 }
 
-#right-button {
-  float: left;
-  width: 30px;
-  text-align: center;
-}
-
-a {
+#right-button > a, #left-button > a {
   text-decoration: none;
-  font-weight: bolder;
-  color: red;
+  color: #DDD;
+
+  font-weight: 800;
+  font-size: 5em;
+  text-shadow: 1pt 1pt 1pt rgba(0,0,0,.3);
+
+  opacity: .5;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#right-button > a:hover,
+#left-button > a:hover,
+#right-button > a:active,
+#left-button > a:active {
+  text-decoration: none;
+  color: #CCC;
+
+  font-weight: 800;
+  font-size: 5em;
+  text-shadow: .07em .07em .1em rgba(0,0,0,.5);
+
+  opacity: 1;
 }
 
 #inner:first-child {
@@ -34,4 +52,9 @@ label {
 
 .hide {
   display: none;
+}
+
+.promotion-section > .flex-box {
+  width: 100%;
+  align-items: center;
 }
