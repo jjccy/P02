@@ -1,5 +1,4 @@
 #outer {
-  float: left;
   width: 250px;
   overflow: hidden;
   white-space: nowrap;
@@ -46,6 +45,12 @@
   margin-left: 0;
 }
 
+#inner:first-child > .flex-box{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+
 .hide {
   display: none;
 }
@@ -71,8 +76,9 @@
 
 .promotion-item > .flex-box {
   width: 25em;
-  padding: 2em;
+  margin: 1em 3em;
   height: 37em;
+  padding-bottom: 2em;
 
   flex-direction: column;
 }
@@ -97,5 +103,45 @@
 
 .promotion-item > .flex-box > .bE-button {
   padding: 1em 3em;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 22pt;
+  }
+
+  .promotion-section > h1 {
+    padding-top: 1em;
+    padding-left: 1em;
+  }
+
+  .promotion-item {
+    display:block;
+  }
+
+  .promotion-item > .flex-box {
+    width: 84%;
+    height: auto;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .promotion-item > .flex-box > img {
+    width: 100%;
+  	height: 65vw;
+  }
+
+  .promotion-item > .flex-box > .bE-button {
+    padding: 1em 3em;
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  #right-button, #left-button  {
+    position: fixed;
+    visibility: hidden;
+  }
 
 }
