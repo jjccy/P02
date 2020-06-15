@@ -149,6 +149,7 @@ footer, footer a {
   .icon-section {
     position: static;
     order: 5;
+    text-align: left;
   }
 
   .icon-holder {
