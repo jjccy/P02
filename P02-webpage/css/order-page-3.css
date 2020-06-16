@@ -1,4 +1,4 @@
-#product-page {
+#room-rate-page {
   padding: 6em 5em;
   background-color: #EEE;
 }
@@ -24,11 +24,9 @@
         padding-top: 1em;
 }
 
-/*#queen-info{
+#queen-info{
   border-bottom: 1px solid black;
-  padding-top: 2em;
   display: flex;
-  justify-content: space-between;
 }
 
 #QUEEN-WITH-GREAT-VIEW{
@@ -36,19 +34,27 @@
 }
 
 #queen-left{
-        flex-basis: 66.6vw;
+        width: 75%;
         display: flex;
-        justify-content: left;
         flex-grow: 1;
+        border-right: 1px solid black;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
     }
 
 
 #queen-right{
-        flex-basis: 33.3vw;
+        width: 25%;
         flex-grow: 1;
-        justify-content: center;
-        border-left: 1px solid black;
-}*/
+        padding-top: 2em;
+        padding-bottom: 2em;
+        position: relative;
+        left:2em;
+}
+
+
+
 
 .more-info {
   border: 2px solid black;
@@ -73,7 +79,12 @@
   border-color: #1A331E;
 }
 
-
+#more-info-button{
+  padding-top:2em;
+}
+#enlarge-number{
+  font-size: 20pt;
+}
 #modify {
   text-decoration: underline;
   text-align: right;
@@ -88,15 +99,112 @@
   color: #1A331E;
 }
 
+.order-page-room-image{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
 
+.order-page-room-image> div {
+  background-color: gray;
+  width: 30%;
+  height: 300px;
+  margin: 10px;
 
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#order-page-room-image1{
+background-image: url(../img/Loft.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+#READ-MORE{
+  text-decoration: underline;
+  text-align: right;
+  color: gray;
+
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+#READ-MORE:hover, #READ-MORE:active {
+  color: #1A331E;
+}
+#specific-feature{
+  list-style-type: circle;
+}
+
+#more-check-out{
+  margin-top: 2em;
+}
+.select-button{
+  border: 2px solid black;
+  padding: 0.5em 2em;
+  flex-basis: 10%;
+  text-align: center;
+
+  max-width: 14.5em;
+
+  font-size:9pt;
+  text-decoration: none;
+  color: black;
+
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+
+}
+
+.select-button:hover{
+  background-color: #1A331E;
+  color: white;
+  border-color: #1A331E;
+}
+
+#select-button{
+  margin-top: 2em;
+}
 @media screen and (max-width: 1000px) {
-  #product-page * {
+  #room-rate-page * {
     font-size: 25px;
   }
 
-  #product-page {
+  #room-rate-page {
     padding-top: 10em;
   }
+
+  #queen-info{
+  display: flex;
+  flex-direction: column;
+}
+  #queen-left{
+        width: 100%;
+        border-right:none;
+        border-bottom:1px solid black;
+        padding-top: 0.5em;
+
+    }
+
+  #queen-right{
+        width: 100%;
+        left: 0;
+}
+
+.order-page-room-image> div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+
+}
+
+
 
 }

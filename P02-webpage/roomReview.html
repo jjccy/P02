@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>order-page-2</title>
+    <!--
+    Website for IAT 339 P02
+    Author Jimmy Chu, Jay Zhao
+    With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
+    -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="script/main-nav.js"></script>
+    <script type="text/javascript" src="script/room-list.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bElements.css">
+    <link rel="stylesheet" href="css/main-nav.css">
+    <link rel="stylesheet" href="css/roomReview.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type = "text/css" href="css/carousel.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body>
+    <!--
+    insepration of this animation is from css trick:
+    Controlling CSS Animations and Transitions with JavaScript
+    by Zach Saucier
+    https://css-tricks.com/controlling-css-animations-transitions-javascript/
+    -->
+
+    <!-- navgation bar start from here -->
+
+    <div id="navgation-bar">
+      <nav class="main-nav-top flex-box">
+          <a id="call-left" href="#" class="flex-spaceholder-min top-items">&#8801;</a>
+          <div class="flex-spaceholder-max top-items logo"><a href="#" ><img src="img/logo.png" alt="logo image"></a></div>
+          <a href="#" class="flex-spaceholder-min top-items book-button">BOOK NOW</a>
+      </nav>
+      <nav class="main-nav-left flex-box">
+        <div class="flex-box">
+          <div class="flex-spaceholder-max logo"><img src="img/logo.png" alt="logo image"></div>
+          <a id="close-left" href="#" class="flex-spaceholder-min main-nav-item">&#9587</a>
+        </div>
+        <div class="nav-list-holder flex-spaceholder-max">
+          <ul class="nav-list">
+            <li><a href="#" class="main-nav-item">HOME</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="#" class="main-nav-item">ROOMS</a></li>
+            <li><a href="#" class="main-nav-item">GREAT DEALS</a></li>
+            <li><a href="#" class="main-nav-item">RESTAURANTS</a></li>
+            <li><a href="#" class="main-nav-item">PRIVATE EVENTS</a></li>
+            <li><a href="#" class="main-nav-item">CALENDAR</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="#" class="main-nav-item">ABOUT</a></li>
+            <li><a href="#" class="main-nav-item">CANTACT</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+    <!-- navgation bar ends here -->
+
+    <div id="img-container">
+
+
+      <!-- start carousel section -->
+      <!-- the idea for this carousel is from my past assignment, orgianl source is not traceable -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <img src="img/Loft.jpg" alt="Loft">
+              <div class="carousel-caption">
+                <p class="Title">Some title</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/Penthhouse.jpg" alt="Penthhouse">
+              <div class="carousel-caption">
+                <p class="Title">Some title</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/Queen.jpg" alt="Queen">
+              <div class="carousel-caption">
+                <p class="Title">Some title</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/Suit.jpg" alt="Suit">
+              <div class="carousel-caption">
+                <p class="Title">Some title</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/Villa.jpg" alt="Villa">
+              <div class="carousel-caption">
+                <p class="Title">Some title</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+        </div>
+      <!-- end carousel section -->
+
+<section id="room-review-page">
+ <div class="container2">
+  
+  <div class="item1">
+    <div class="king"><h2 class="king">KING</h2></div>
+    <div class="feature-lists">
+    <ul class="suit">
+      <li>1 TEMPUR-Cloud® Supreme king-sized bed</li>
+      <li>Private bath with rainfall shower and massage body jets</li>
+      <li>Seating area</li>
+      <li>Welcome bottle of Robert Mondavi wine</li>
+      <li>Minibar contains sodas, bottled water, juices, domestic and imported beers (refreshed daily)</li>
+      <li>Espresso maker</li>
+      <li>Direct-dial telephone</li>
+      <li>Alarm clock with wake-up light/radio/iPod dock with Bluetooth connection</li>
+      <li>Bathroom scale</li>
+      <li>Iron/ironing board</li>
+      <li>Umbrellae</li>
+      <li>Nightly petit fours</li>
+      <li>24-hour room service and nightly turndown service</li>
+      <li>Individually controlled A/C</li>
+    </ul>
+  </div>
+  </div>
+
+
+  <div class="item2">
+    <div><h2 class="dates">PLEASE SELECT YOUR DATES</h2></div>
+    <div class="check-in-fill"><span>CHECK IN</span></div>
+    <div class="check-in-day"><span>6/25</span></div>
+    <div class="check-out-fill"><span>CHECK OUT</span></div>
+    <div class="check-out-day"><span>6/30</span></div>
+    <div class="check-ava-button"><button class="button4">CHECK AVAILABILITY</button></div>
+  </div>
+
+ </div>
+
+ </section>
+ 
+    <!-- footer starts here -->
+
+    <footer class="flex-box">
+
+      <address class="flex-spaceholder-min flex-box left-footer">
+        <div class="logo flex-spaceholder-min">
+          <img src="img/logo.png" alt="logo image">
+        </div>
+        <div class="flex-spaceholder-min">
+          <p>
+            305 Cambie STREET<br>
+            VANCOUVER BC V5H0C7
+          </p>
+        </div>
+        <div class="flex-spaceholder-min">
+          <a href="#" class="footer-button">FIND US</a>
+        </div>
+        <div class="flex-spaceholder-min">
+          <p>
+            PHONE 299 374 50000<br>
+            EMAIL INFO@XXXXHOTELS.COM
+          </p>
+        </div>
+      </address>
+
+      <div class="flex-spaceholder-max right-footer flex-box">
+        <div class="footer-nav flex-box flex-spaceholder-min">
+          <a href="#" class="flex-spaceholder-max">ACCESSIBLE</a>
+          <a href="#" class="flex-spaceholder-max">SALES</a>
+          <a href="#" class="flex-spaceholder-max">EVENTS</a>
+          <a href="#" class="flex-spaceholder-max">PRESS</a>
+          <a href="#" class="flex-spaceholder-max">JOBS</a>
+          <a href="#" class="flex-spaceholder-max">CONTACT</a>
+          <a href="#" class="flex-spaceholder-max">LEGSL</a>
+          <a href="#" class="flex-spaceholder-max">FAQS</a>
+        </div>
+        <a href="#" class="footer-button flex-spaceholder-min">MODIFY RESERVATION</a>
+      </div>
+      <br>
+
+      <div class="icon-section">
+        <div class="flex-box icon-holder flex-spaceholder-min">
+          <a href="https://www.facebook.com/" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Facebook_1.svg" alt="Facebook icon">
+          </a>
+          <a href="https://www.google.com/" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Google+_1.svg" alt="Google+ icon">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Instagram_1.svg" alt="Instagram icon">
+          </a>
+          <a href="https://twitter.com/explore" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Twitter_1.svg" alt="Twitter icon">
+          </a>
+        </div>
+
+        <p class="flex-spaceholder-min">
+          CREDITS
+        </p>
+      </div>
+
+    </footer>
+
+
+    <!-- end of footer section -->
+
+
+  </body>
+</html>
