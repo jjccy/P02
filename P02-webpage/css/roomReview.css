@@ -9,154 +9,6 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
   background-color: #EEE;
 }
 
-.main-nav-top {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 1;
-
-  justify-content: space-between;
-
-  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-  background-color: rgba(0,0,0,0);
-
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.main-nav-top.scroll-up {
-  top: -10rem !important;
-}
-
-.main-nav-top .top-items {
-  margin: .5rem 3rem 1.3rem;
-  text-align: center;
-
-
-  text-decoration: none;
-  color: #FFF;
-}
-
-#call-left {
-  font-size: 2rem;
-  font-weight: 100;
-}
-
-.logo img {
-  max-height: 4rem;
-  width: auto;
-}
-
-.book-button {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.03rem;
-  word-spacing: 0.02rem;
-
-  padding: .6rem;
-  border: 1px solid white;
-
-  transition-duration: .5s;
-	transition-property: background-color;
-  transition-property: color;
-  transition-timing-function: ease;
-}
-
-.book-button:hover, .book-button:focus {
-    background-color: white;
-    color: #314820;
-}
-
-.main-nav-left {
-  position: fixed;
-  left: -25rem;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-
-  flex-direction: column;
-  align-items: flex-start;
-
-  padding: 2rem 3rem;
-
-  background: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(0,0,0,0.7) 100%);
-  background-color: rgba(0,0,0,0);
-
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.main-nav-left.appear {
-  left: 0 !important;
-}
-
-.main-nav-left .logo {
-  padding-right: 12.5rem;
-}
-
-.main-nav-left .logo img {
-  max-height: 4.5rem;
-}
-
-#close-left{
-  font-size: 0.9rem;
-  font-weight: 100;
-  color: rgba(255,255,255,0.3);
-
-  transition-duration: .5s;
-  transition-property: color;
-  transition-timing-function: ease;
-}
-
-#close-left:hover {
-  color: rgba(255,255,255,1);
-}
-
-.nav-list-holder {
-  left: 0;
-}
-
-ul.nav-list{
-	list-style-type: none;
-  list-style-position: inside;
-
-  padding-inline-start: 0;
-  margin-block-start: 2em;
-  margin-block-end: 1em;
-}
-
-.main-nav-item {
-  font-size: .95rem;
-  font-weight: 400;
-	letter-spacing: 0.05rem;
-  word-spacing: 0.05rem;
-  line-height: 2.65em;
-
-  text-decoration: none;
-  color: rgba(255,255,255,0.8);
-
-  padding: .3rem 0;
-
-  transition-duration: .5s;
-  transition-property: all;
-  transition-timing-function: ease;
-}
-
-.main-nav-item:hover, .main-nav-item:focus {
-    color: white;
-    text-decoration: underline;
-}
-
-
-
-
 /*roomreviewbody*/
 *{
   box-sizing: border-box;
@@ -245,7 +97,7 @@ ul.nav-list{
 
 }
 
-  .button4{
+.button4{
   border: 2px solid black;
   padding: 0.5em 2em;
   flex-basis: 10%;
@@ -276,7 +128,7 @@ li{
   font-family: 'Ubuntu', sans-serif;
   padding: 0.5em;
 }
-  
+
   .king{
   font-family: 'Ubuntu', sans-serif;
   margin-left: 1em;
@@ -286,7 +138,7 @@ li{
   text-align: center;
   margin-top: 2em;
   }
- 
+
 
  #img-container {
    width: 100%;
@@ -312,7 +164,7 @@ li{
   .container2>.item1{
   width: 100%;
   border-top: 1px solid black;
-  
+
  }
    .container2>.item2{
   width: 100%;
