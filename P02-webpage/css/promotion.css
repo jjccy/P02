@@ -83,13 +83,23 @@
   flex-direction: column;
 }
 
-.promotion-item > .flex-box > img {
+.promotion-item > .flex-box > a > img {
   object-fit: cover; /* Maintain its aspect ratio */
 	object-position: center; /* Center the image within the element */
 	height: 20em;
   width: 100%;
 
   padding-bottom: 2em;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.promotion-item > .flex-box > a > img:hover {
+  opacity: 0.5;
 }
 
 .promotion-item > .flex-box > p {
@@ -103,7 +113,6 @@
 
 .promotion-item > .flex-box > .bE-button {
   padding: 1em 3em;
-
 }
 
 
