@@ -123,12 +123,16 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
 }
 
 ul.nav-list{
-	list-style-type: none;
+	list-style-type: none !important;
   list-style-position: inside;
 
   padding-inline-start: 0;
   margin-block-start: 2em;
   margin-block-end: 1em;
+}
+
+.nav-list > li {
+  padding: 0;
 }
 
 .main-nav-item {
