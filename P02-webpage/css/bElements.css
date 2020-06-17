@@ -237,7 +237,11 @@ ol.clear-list{
 }
 
 #myCarousel img{
+<<<<<<< Updated upstream
 	object-fit: cover; /* Maintain its aspect ratio */
+=======
+	object-fit: cover; /* Do not scale the image */
+>>>>>>> Stashed changes
 	object-position: center; /* Center the image within the element */
 	height: 100%;
 	width: 100%;
