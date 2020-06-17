@@ -1,0 +1,171 @@
+#checkout-info-page {
+  padding: 6em 5em;
+  background-color: #EEE;
+}
+
+#top-info{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+#left-info{
+        
+        display: flex;
+        justify-content: left;
+        flex-grow: 1;
+      
+
+}
+
+#right-info{
+        flex-grow: 1;
+        text-align: right;
+        padding-top: 1em;
+}
+
+.info-name{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.info-box-1{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 75px;
+}
+
+.info-box-2{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.info-box-3{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 65px;
+}
+
+.info-box-4{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 70px;
+}
+
+.info-box-5{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 75px;
+}
+
+.info-box-6{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 50px;
+}
+
+.PERSONAL-INFORMATION{
+  border: 1px solid blue;
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.PERSONAL-INFORMATION-LEFT{
+        border: 1px solid green;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+}
+
+.PERSONAL-INFORMATION >label{
+  margin-top: 2em;
+}
+
+.PERSONAL-INFORMATION-RIGHT{
+        border: 1px solid red;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+}
+
+.REVIEW-RESERVATION {
+  text-decoration: underline;
+  text-align: right;
+  color: gray;
+
+  transition-duration: .5s;
+	transition-property: all;
+  transition-timing-function: ease;
+}
+
+.REVIEW-RESERVATION:hover {
+  color: #1A331E;
+}
+
+.CONFIRM-RESERVATION{
+  border: 2px solid black;
+  padding: 0.5em 2em;
+  flex-basis: 10%;
+  text-align: center;
+
+  max-width: 14.5em;
+
+  font-size:9pt;
+  text-decoration: none;
+  color: black;
+
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+
+}
+
+.CONFIRM-RESERVATION:hover{
+  background-color: #1A331E;
+  color: white;
+  border-color: #1A331E;
+}
+
+.review-link{
+  margin-top: 0.5em;
+}
+
+.confirm-button{
+  margin-top: 2em;
+}
+
+#modify {
+  text-decoration: underline;
+  text-align: right;
+  color: gray;
+
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+#modify:hover, #modify:active {
+  color: #1A331E;
+}
+
+@media screen and (max-width: 1000px) {
+  #checkout-info-page * {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #checkout-info-page {
+    padding-top: 10em;
+  }
+
+}
+  
+
+.PERSONAL-INFORMATION-RIGHT{
+  padding-top: 1em;
+}
+
+}
