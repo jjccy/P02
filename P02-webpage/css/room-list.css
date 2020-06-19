@@ -71,6 +71,9 @@
 
 .rooms > .flex-box {
   width: 100%;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-shadow: .1em .1em .5em black;
 }
 
 #room1, #room6{
