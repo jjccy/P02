@@ -1,27 +1,27 @@
 /* Use a media query to add a break point at 800px: */
 /*
 @media screen and (max-width: 1300px) {
-  *{
-    font-size: 15px;
-  }
+*{
+font-size: 15px;
+}
 }
 
 @media screen and (max-width: 1200px) {
-  *{
-    font-size: 14px;
-  }
+*{
+font-size: 14px;
+}
 }
 
 @media screen and (max-width: 1150px) {
-  *{
-    font-size: 13px;
-  }
+*{
+font-size: 13px;
+}
 }
 
 @media screen and (max-width: 1100px) {
-  *{
-    font-size: 11px;
-  }
+*{
+font-size: 11px;
+}
 }
 */
 
@@ -45,54 +45,55 @@
 
 
 body {
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif !important;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 h1 {
-	font-weight: 400;
-	font-size: 2.5em;
+  font-weight: 400;
+  font-size: 2.5em;
 }
 
 h2 {
-	font-weight: 300;
-	font-size: 1.67em;
+  font-weight: 300;
+  font-size: 1.67em;
 }
 
 h3 {
-	font-weight: 300;
-	font-size: .83em;
+  font-weight: 300;
+  font-size: .83em;
 }
 
 p {
-    letter-spacing: 0.02em;
-    word-spacing: 0.02em;
-  	line-height: 1.6em;
-  	font-size: 0.95em;
-		font-weight: 300;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  line-height: 1.6em;
+  font-size: 0.95em;
+  font-weight: 300;
 }
 
 img {
-	width: auto;
-	height: auto;
+  width: auto;
+  height: auto;
 }
 
 .bE-link {
-	font-weight: bold;
-	text-decoration: none;
-	color: #d11919;
+  font-weight: bold;
+  text-decoration: none;
+  color: #d11919;
 
-	transition-property: color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .bE-link:hover, .bE-link:focus{
-	text-decoration: underline;
-	color: #a80e0e;
+  text-decoration: underline;
+  color: #a80e0e;
 }
 
 .bE-form {
-	padding: 1em;
+  padding: 1em;
 }
 
 .bE-label {
@@ -100,200 +101,255 @@ img {
 }
 
 .bE-input-text{
-	margin-bottom: 0.5em;
-	border: 1px solid #ccc;
-	padding: 0.7em 1.5em 0.7em;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  padding: 0.7em 1.5em 0.7em;
 }
 
 .bE-button {
-	margin: 0.5em 0 0.5em;
-	padding: 0.5em 1.5em 0.5em;
-	border: none;
+  margin: 0.5em 0 0.5em;
+  padding: 0.5em 1.5em 0.5em;
+  border: none;
 
-	background-color: #141414;
-	color: #efefef;
+  background-color: #141414;
+  color: #efefef;
   text-decoration: none;
 
-	transition-property: background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
-.bE-button:hover, .bE-button:focus{
-	background-color: #d11919;
+.bE-button:hover, .bE-button:focus, .bE-link:active{
+  background-color: #d11919;
 }
 
 .square {
-    width: 1em;
-    height: 1em;
-    line-height: 1em;
-    vertical-align: middle;
-    display: inline-block;
-    margin: 0 0.2em 0.2em -0.2em;
-    border: 1px solid #ccc;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 0.2em 0.2em -0.2em;
+  border: 1px solid #ccc;
 }
 
 .color-swatches {
-	padding: 0.5em 1.5em 0.5em 0.5em;
-	border: 1px solid #ccc;
+  padding: 0.5em 1.5em 0.5em 0.5em;
+  border: 1px solid #ccc;
 }
 
 ul.clear-list{
-	list-style-type: "- ";
-	font-size: 1.05em;
-	letter-spacing: 0.05em;
-    word-spacing: 0.05em;
-  	line-height: 1.6em;
+  list-style-type: "- ";
+  font-size: 1.05em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+  line-height: 1.6em;
 }
 
 ol.clear-list{
-	list-style-type: decimal-leading-zero;
-	font-size: 1.05em;
-	letter-spacing: 0.05em;
-    word-spacing: 0.05em;
-  	line-height: 1.6em;
+  list-style-type: decimal-leading-zero;
+  font-size: 1.05em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+  line-height: 1.6em;
 }
 
 .flex-box {
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 
-	align-items: center;
+  align-items: center;
 }
 
 .flex-spaceholder-max {
-	flex: 999 1 auto;
+  flex: 999 1 auto;
 }
 
 .flex-spaceholder-min {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .searchbar {
-	text-align: center;
+  text-align: center;
 
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 
-	align-items: center;
+  align-items: center;
 
 }
 
 .searchbar input[type=text] {
-	flex: 99 1 auto;
-	padding: 0.5em;
-	font-size: 1em;
+  flex: 99 1 auto;
+  padding: 0.5em;
+  font-size: 1em;
 
-	color: #efefef;
+  color: #efefef;
 }
 
 
 .searchbar input[type=text]:focus {
-    outline-width: 1px;
+  outline-width: 1px;
 }
 
 .searchbar button {
-	flex: 1 1 auto;
-	width: 2em;
-	height: 2em;
-	padding: 0.25em;
-	background-color: rgba(0,0,0,0);
-	background-image: url("../img/search-icon-darker.png");
-	background-repeat: no-repeat;
-	background-size: contain;
+  flex: 1 1 auto;
+  width: 2em;
+  height: 2em;
+  padding: 0.25em;
+  background-color: rgba(0,0,0,0);
+  background-image: url("../img/search-icon-darker.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 
-	border: none;
+  border: none;
 
-	transition-duration: .5s;
-	transition-property: opacity;
+  transition-duration: .5s;
+  transition-property: opacity;
 
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
-.searchbar button:hover, .searchbar button:focus {
-    opacity: 1.0;
+.searchbar button:hover, .searchbar button:focus, .searchbar button:active {
+  opacity: 1.0;
 }
 
 .group {
-	border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .bold-text {
-	font-weight: 800;
+  font-weight: 800;
 }
 
 .light-text {
-	font-weight: 100;
+  font-weight: 100;
 }
 
-#myCarousel{
+#Carousel{
   height: 100%;
-	width: 100%;
+  width: 100%;
 
-	max-width: 100vw;
-	max-height: 100vh;
-}
+  max-width: 100vw;
+  max-height: 100vh;
 
-#myCarousel img{
-	object-fit: cover; /* Maintain its aspect ratio */
-	object-position: center; /* Center the image within the element */
-	height: 100%;
-	width: 100%;
-}
-
-.carousel-inner > .item {
-	position: relative;
-	width: 100%;
-  height: 100%;
   overflow: hidden;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  grid-gap: 10px;
 }
 
-.carousel-inner {
-	width: 100%;
+#Carousel img{
+  object-fit: cover; /* Maintain its aspect ratio */
+  object-position: center; /* Center the image within the element */
   height: 100%;
-}
+  width: 100%;
 
-.carousel-indicators{
-
-}
-
-.carousel-indicators li{
-  border-color: #555555;
-}
-
-.carousel-indicators .active{
-  background-color: #555555;
-}
-
-.carousel-caption {
-	position: absolute;
+  display: block;
   max-width: 100%;
-	max-height: 100%;
-  text-align: left;
-  padding: 5em;
-  color: #333333;
-
-	top: 70%;
 }
 
-.carousel-caption > p{
-  text-shadow: 2px 2px 5px #333;
-  font-size: 1.1em;
-	text-align: left;
+.gallery {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
 }
 
-
-.carousel-caption > .Title{
-  font-size: 2em;
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: .8em;
+  min-width: 100%;
+  object-fit: cover;
 }
 
-.carousel-control {
-  z-index: 50;
-	background-image: none !important;
+.lil-nav {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  grid-row-start: 2;
 }
 
-.carousel-control > .glyphicon:hover, .carousel-control > .glyphicon:active {
-	text-shadow: 5px 5px 5px #333;
+/* width */
+.lil-nav::-webkit-scrollbar {
+  width: 1em;
+}
+
+/* Track */
+.lil-nav::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.lil-nav::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* Handle on hover */
+.lil-nav::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.lil-nav > a {
+  display: flex;
+  min-width: 20vw;
+  margin-right: .5em;
+}
+
+.lil-nav__img {
+  object-fit: cover;
+  filter: saturate(.2);
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.lil-nav > a:hover .lil-nav__img,
+.lil-nav > a:active .lil-nav__img,
+.lil-nav > a:focus .lil-nav__img {
+  transform: scale(1.03);
+  filter: saturate(1);
+}
+
+@media screen and (min-width: 1200px) {
+  #Carousel {
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
+  }
+
+  .gallery {
+    display: block;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+  }
+
+  .gallery__img {
+    min-width: auto;
+    min-height: 100%;
+  }
+
+  .lil-nav {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+    grid-row-start: auto;
+  }
+
+  .lil-nav > a {
+    margin-bottom: .5em;
+    min-height: 10vh;
+    min-width: 100%;
+  }
+
+  .lil-nav__img {
+    min-height: 100%;
+  }
 }
