@@ -25,6 +25,12 @@ font-size: 11px;
 }
 */
 
+@media screen and (min-width: 1000px) {
+  *{
+    font-size: 10pt;
+  }
+}
+
 @media screen and (min-width: 1050px) {
   *{
     font-size: 10.5pt;
