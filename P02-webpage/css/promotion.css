@@ -50,11 +50,6 @@
   margin-left: 0;
 }
 
-#elem {
-  flex-wrap: wrap;
-}
-
-
 .hide {
   display: none;
 }
