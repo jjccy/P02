@@ -10,18 +10,18 @@
 }
 
 #left-info{
-        
-        display: flex;
-        justify-content: left;
-        flex-grow: 1;
-      
+
+  display: flex;
+  justify-content: left;
+  flex-grow: 1;
+
 
 }
 
 #right-info{
-        flex-grow: 1;
-        text-align: right;
-        padding-top: 1em;
+  flex-grow: 1;
+  text-align: right;
+  padding-top: 1em;
 }
 
 
@@ -109,16 +109,16 @@
   margin-left: 11.5em;
 }
 .PERSONAL-INFORMATION{
-/*  border-bottom: 1px solid black;*/
+  /*  border-bottom: 1px solid black;*/
   display: flex;
 }
 
 .PERSONAL-INFORMATION-LEFT{
-        /*border: 1px solid green;*/
-        width: 50%;
-        display: flex;
-        justify-content: left;
-        flex-grow: 1;
+  /*border: 1px solid green;*/
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  flex-grow: 1;
 }
 
 .PERSONAL-INFORMATION >label{
@@ -132,7 +132,7 @@
   color: gray;
 
   transition-duration: .5s;
-	transition-property: all;
+  transition-property: all;
   transition-timing-function: ease;
 }
 
@@ -189,17 +189,17 @@
 
 
 @media screen and (max-width: 1000px) {
-.PERSONAL-INFORMATION{
-  display: flex;
-  flex-direction: column;
-}
- 
+  .PERSONAL-INFORMATION{
+    display: flex;
+    flex-direction: column;
+  }
+
   #checkout-info-page {
     padding-top: 15em;
   }
 
 }
-  
+
 
 .PERSONAL-INFORMATION-LEFT{
   width: 100%;
@@ -228,6 +228,4 @@
 .pay-box-2{
   margin-bottom: 1em;
   margin-left: 10em;
-}
-
 }
