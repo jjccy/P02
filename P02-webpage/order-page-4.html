@@ -10,7 +10,6 @@
     -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="script/main-nav.js"></script>
-    <script type="text/javascript" src="script/room-list.js"></script>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bElements.css">
@@ -82,140 +81,153 @@
         <p>YOUR STAY: 5/20/2020 - 5/25/2020 GUEST: 1 ADULT</p>
 
         <div id="right-info">
-          <a href="#" id="modify">MODIFY</a>
+          <a href="roomReview.html" id="modify">MODIFY</a>
         </div>
 
       </div>
     </div>
 
-    <h2>PERSONAL INFORMATION</h2>
+    <div class="input-contain"> <!-- start of one input contain -->
+      <h2>PERSONAL INFORMATION</h2>
 
-    <div class="PERSONAL-INFORMATION">
+      <div class="input-section flex-box"> <!-- start one input section -->
 
+        <div class="input-column flex-box flex-spaceholder-min">
 
-      <div class="PERSONAL-INFORMATION-LEFT">
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="title">Title</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="title">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="fname">First name</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="fname">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="mi">Middle initial</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="mi">
+          </div>
+        </div>
+
+        <div class="input-column flex-box flex-spaceholder-min">
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="lname">Last name</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="lname">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="email">E-mail</label>
+            <input class="input-box flex-spaceholder-min" type="email" id="email">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="remail">Conform email</label>
+            <input class="input-box flex-spaceholder-min" type="email" id="remail">
+          </div>
+        </div>
+
+      </div> <!-- end one input section -->
+
+      <div>
         <form action="/action_page.php">
-          <label class="info-name" for="fname">TITLE</label>
-          <input class="info-box-1" type="text" id="fname" name="fname" value="">
-          <br>
-          <label class="info-name" for="lname">FIRST NAME</label>
-          <input class="info-box-2" type="text" id="fname" name="lname" value="">
-          <br>
-          <label class="info-name" for="fname">MIDDLE INITIAL</label>
-          <input class="info-box-3" type="text" id="fname" name="fname" value="">
+          <input type="checkbox"  name="create-new-account" value="account">
+          <label for="create-new-account">CREATE NEW ACCOUNT</label>
         </form>
       </div>
 
-      <div class="PERSONAL-INFORMATION-LEFT">
+    </div> <!-- end of one input contain -->
+
+    <div class="input-contain"> <!-- start of one input contain -->
+      <h2>ADDRESS</h2>
+
+      <div class="input-section flex-box"> <!-- start one input section -->
+
+        <div class="input-column flex-box flex-spaceholder-min">
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="cname">Company name</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="cname">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="address">Address</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="address">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="province">State / Province</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="province">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="phone">Phone</label>
+            <input class="input-box flex-spaceholder-min" type="tel" id="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          </div>
+        </div>
+
+        <div class="input-column flex-box flex-spaceholder-min">
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="country">Country</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="country">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="city">City</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="city">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="postCode">Postal Code</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="postCode">
+          </div>
+        </div>
+
+      </div> <!-- end one input section -->
+
+    </div> <!-- end of one input contain -->
+
+    <div class="input-contain"> <!-- start of one input contain -->
+      <h2>PERSONAL INFORMATION</h2>
+
+      <div class="input-section flex-box"> <!-- start one input section -->
+
+        <div class="input-column flex-box flex-spaceholder-min">
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="payment">Payment method</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="payment">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="cardholder">Cardholder name</label>
+            <input class="input-box flex-spaceholder-min" type="text" id="cardholder">
+          </div>
+        </div>
+
+        <div class="input-column flex-box flex-spaceholder-min">
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="cardNum">Card number</label>
+            <input class="input-box flex-spaceholder-min" type="number" id="cardNumr">
+          </div>
+
+          <div class="input flex-box flex-spaceholder-min">
+            <label class="input-name flex-spaceholder-min" for="expireDate">Expration date</label>
+            <input class="input-box flex-spaceholder-min" type="month" id="expireDate">
+          </div>
+        </div>
+
+      </div> <!-- end one input section -->
+
+      <div>
         <form action="/action_page.php">
-          <label class="info-name" for="fname">LAST NAME</label>
-          <input class="info-box-4" type="text" id="fname" name="fname" value="">
-          <br>
-          <label class="info-name" for="lname">E-MAIL</label>
-          <input class="info-box-5" type="text" id="fname" name="lname" value="">
-          <br>
-          <label class="info-name" for="fname">RETYPE E-MAIL</label>
-          <input class="info-box-6" type="text" id="fname" name="fname" value="">
+          <input type="checkbox"  name="create-new-account" value="account">
+          <label for="create-new-account">PLEASE ACKNOWLEDGE THAT YOU HAVE READ AND ACCEPT OUR PRIVACY POLICY.</label>
         </form>
       </div>
 
 
-    </div>
-
-    <div>
-      <form action="/action_page.php">
-        <input type="checkbox"  name="create-new-account" value="account">
-        <label for="create-new-account">CREATE NEW ACCOUNT</label>
-      </form>
-
-    </div>
-
-
-
-
-
-
-    <h2>ADDRESS</h2>
-
-    <div class="PERSONAL-INFORMATION">
-
-
-      <div class="PERSONAL-INFORMATION-LEFT">
-        <form action="/action_page.php">
-          <label class="info-name" for="fname">COMPANY NAME</label>
-          <input class="address-box-1" type="text" id="fname" name="fname" value="">
-          <br>
-          <label class="info-name" for="lname">ADDRESS</label>
-          <input class="address-box-2" type="text" id="fname" name="lname" value="">
-          <br>
-          <label class="info-name" for="fname">STATE/PROVINCE</label>
-          <input class="address-box-3" type="text" id="fname" name="fname" value="">
-          <br>
-          <label class="info-name" for="fname">PHONE</label>
-          <input class="address-box-4" type="text" id="fname" name="fname" value="">
-        </form>
-      </div>
-
-      <div class="PERSONAL-INFORMATION-LEFT">
-        <form action="/action_page.php">
-          <label class="info-name" for="fname">COUNTRY</label>
-          <input class="address-box-5" type="text" id="fname" name="fname" value="">
-          <br>
-          <label class="info-name" for="lname">CITY</label>
-          <input class="address-box-6" type="text" id="fname" name="lname" value="">
-          <br>
-          <label class="info-name" for="fname">POSTAL CODE</label>
-          <input class="address-box-7" type="text" id="fname" name="fname" value="">
-        </form>
-      </div>
-
-
-    </div>
-
-
-
-
-
-
-    <h2>PAYMENT INFORMATION</h2>
-
-    <div class="PERSONAL-INFORMATION">
-
-
-      <div class="PERSONAL-INFORMATION-LEFT">
-        <form action="/action_page.php">
-          <label class="info-name" for="fname">PAYMENT TYPE</label>
-          <input class="pay-box-1" type="text" id="fname" name="fname" value="">
-          <br>
-          <label class="info-name" for="lname">CAEDHOLDER NAME</label>
-          <input class="pay-box-2" type="text" id="fname" name="lname" value="">
-        </form>
-      </div>
-
-      <div class="PERSONAL-INFORMATION-LEFT">
-        <form action="/action_page.php">
-          <label class="info-name" for="fname">CARD NUMBER</label>
-          <input class="pay-box-3" type="text" id="fname" name="fname" value="">
-          <br>
-          <label class="info-name" for="lname">EXPRATION DATE</label>
-          <input class="pay-box-4" type="text" id="fname" name="lname" value=""
-        </form>
-      </div>
-
-
-    </div>
-
-
-    <div>
-      <form action="/action_page.php">
-        <input type="checkbox"  name="create-new-account" value="account">
-        <label for="create-new-account">PLEASE ACKNOWLEDGE THAT YOU HAVE READ AND ACCEPT OUR PRIVACY POLICY.</label>
-      </form>
-
-    </div>
-
-
-
+    </div> <!-- end of one input contain -->
 
     <div>
       <h2>BOOKING POLICIES</h2>
@@ -227,14 +239,12 @@
       </p>
     </div>
 
-
-
-
     <div>
       <form action="/action_page.php">
         <input type="checkbox"  name="create-new-account" value="account">
         <label for="create-new-account">
-          PLEASE SPECIFY THAT YOU HAVE READ AND UNDERSTAND THE BOOKING POLICIES FOR YOUR ITINERARY.</label>
+          PLEASE SPECIFY THAT YOU HAVE READ AND UNDERSTAND THE BOOKING POLICIES FOR YOUR ITINERARY.
+        </label>
         </form>
 
       </div>
