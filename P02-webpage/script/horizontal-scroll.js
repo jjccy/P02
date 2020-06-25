@@ -17,12 +17,12 @@ $(function() {
   elem.prepend('<div id="left-button" class="flex-spaceholder-min" style="visibility: hidden;"><a href="#"><</a></div>');
   elem.append('<div id="right-button" class="flex-spaceholder-min"><a href="#">></a></div>');
 
-  // Inserting Inner
-  items.wrapAll('<div id="inner" />');
-
-  // Inserting Outer
-  elem.find('#inner').wrap('<div id="outer"/>');
-  $('#outer').addClass('flex-spaceholder-max');
+  // // Inserting Inner
+  // items.wrapAll('<div id="inner" />');
+  //
+  // // Inserting Outer
+  // elem.find('#inner').wrap('<div id="outer"/>');
+  // $('#outer').addClass('flex-spaceholder-max');
 
   var outer = $('#outer');
   var actualWidth = 0;
