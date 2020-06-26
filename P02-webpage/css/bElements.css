@@ -89,18 +89,20 @@ img {
 }
 
 .bE-link {
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
-  color: #d11919;
+  color: #337ab7;
 
-  transition-property: color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-.bE-link:hover, .bE-link:focus{
+.bE-link:hover, .bE-link:focus, .be-link:active{
   text-decoration: underline;
-  color: #a80e0e;
+  color: #1c4b73;
 }
 
 .bE-form {
