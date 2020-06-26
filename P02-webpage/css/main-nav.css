@@ -66,10 +66,11 @@ https://css-tricks.com/controlling-css-animations-transitions-javascript/
   padding: .6em;
   border: 1px solid white;
 
-  transition-duration: .5s;
-	transition-property: background-color;
-  transition-property: color;
-  transition-timing-function: ease;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .book-button:hover, .book-button:focus {
@@ -154,9 +155,11 @@ ul.nav-list{
 
   padding: .3em 0;
 
-  transition-duration: .5s;
-  transition-property: color;
-  transition-timing-function: ease;
+  -webkit-transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -ms-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
 }
 
 .main-nav-item:hover, .main-nav-item:focus {

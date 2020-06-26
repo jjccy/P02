@@ -57,6 +57,7 @@
 .promotion-section {
   background: #333;
   padding-top: 5em;
+  max-width: none;
 }
 
 .promotion-section > h1 {

@@ -55,6 +55,11 @@ body {
   scroll-behavior: smooth;
 }
 
+body > section {
+  max-width: 1920px;
+  margin: auto;
+}
+
 h1 {
   font-weight: 400;
   font-size: 2.5em;
@@ -117,17 +122,20 @@ img {
   padding: 0.5em 1.5em 0.5em;
   border: none;
 
-  background-color: #141414;
-  color: #efefef;
+  border: 1px solid white;
+  color: rgba(255,255,255,0.8);
   text-decoration: none;
 
-  transition-property: background-color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .bE-button:hover, .bE-button:focus, .bE-link:active{
-  background-color: #d11919;
+  background-color: white;
+  color: #314820;
 }
 
 .square {

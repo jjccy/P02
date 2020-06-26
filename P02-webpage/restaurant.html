@@ -2,25 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <title>Restaurant</title>
     <!--
     Website for IAT 339 P02
     Author Jimmy Chu, Jay Zhao
     With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
     -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="script/main-nav.js"></script>
-    <script type="text/javascript" src="script/Contact.js"></script>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bElements.css">
-    <link rel="stylesheet" href="css/main-nav.css">
-    <link rel="stylesheet" href="css/Contact.css">
-    <link rel="stylesheet" href="css/footer.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="script/main-nav.js"></script>
+    <script type="text/javascript" src="script/horizontal-scroll.js"></script>
+
+    <link rel="stylesheet" href="css/main-nav.css">
+    <link rel="stylesheet" type = "text/css" href="css/normalize.css">
+    <link rel="stylesheet" type = "text/css" href="css/bElements.css">
+    <link rel="stylesheet" type = "text/css" href="css/footer.css">
+    <link rel="stylesheet" type = "text/css" href="css/promotion.css">
+
   </head>
   <body>
+
+
     <!--
     insepration of this animation is from css trick:
     Controlling CSS Animations and Transitions with JavaScript
@@ -73,33 +78,101 @@
 
     <!-- navgation bar ends here -->
 
-    <section id="contact-page">
-      <h1>FIND US</h1>
 
-      <h2>DING  HOTEL</h2>
-      <p>
-      A place to lay your head and get everything you need (and want). At DING, we believe true luxury is being heard before you even speak.
-      </p>
+    <!-- start of promotion section -->
 
-      <br>
-      <p>1038 Canada Pl<br>VANCOUVER BC V6C0B9</p>
-      <p>PHONE 299 374 50000<br>EMAIL INDO@XXXXHOTELS.COM</p>
+    <section class="promotion-section">
+      <h1>Restaurants</h1>
 
 
+      <div id="elem" class="flex-box">
 
+        <div id="outer" class="flex-spaceholder-max">
+          <div id="inner">
 
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/Villa.jpg" alt="Villa room">
+                </a>
+                <p class="flex-spaceholder-max">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
 
-      <br><br>
+              </div>
+            </div>
 
-      <a href="#" class="google-map-button">OPEN IN GOOGLE MAP</a>
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/temp-room.jpg" alt="temp room">
+                </a>
+                <p class="flex-spaceholder-max">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
 
+              </div>
+            </div>
 
-      <div id="googlemap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11385.308798990058!2d-123.11834724345074!3d49.27763048530349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486718308f23283%3A0x6643d8bcbabc7a90!2sHotel%20Fairmont%20Pacific%20Rim!5e0!3m2!1sen!2sca!4v1592124259512!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/Queen.jpg" alt="Queen room">
+                </a>
+                <p class="flex-spaceholder-max">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
 
+              </div>
+            </div>
 
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/Loft.jpg" alt="Loft room">
+                </a>
+                <p class="flex-spaceholder-max">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/Penthhouse.jpg" alt="Penthhouse room">
+                </a>
+                <p class="flex-spaceholder-max">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+              </div>
+            </div>
+
+          </div> <!-- end of inner -->
+        </div> <!-- end of outer -->
+
+      </div> <!-- end of elem -->
     </section>
+
+    <!-- end of promotion section -->
+
 
     <!-- footer starts here -->
 
@@ -166,4 +239,5 @@
     <!-- end of footer section -->
 
   </body>
+
 </html>
