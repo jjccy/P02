@@ -97,6 +97,14 @@
 
 @media screen and (max-width: 1000px) {
 
+  #wrapper p {
+    font-size: 23pt;
+  }
+
+  #wrapper h3 {
+    font-size: 23pt;
+  }
+
   .index-text-holder > p:first-child {
     visibility: hidden;
   }
