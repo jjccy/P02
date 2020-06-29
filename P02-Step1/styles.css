@@ -46,3 +46,6 @@ img {
   background-color: #314820;
   border-bottom:3px solid #965A29;
  }
+.add-top-border{
+  border-top:1px solid black;
+}
