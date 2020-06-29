@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>order-page-3</title>
+    <!--
+    Website for IAT 339 P02
+    Author Jimmy Chu, Jay Zhao
+    With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
+    -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="script/main-nav.js"></script>
+    <script type="text/javascript" src="script/room-list.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bElements.css">
+    <link rel="stylesheet" href="css/main-nav.css">
+    <link rel="stylesheet" href="css/order-page-3.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--
+    insepration of this animation is from css trick:
+    Controlling CSS Animations and Transitions with JavaScript
+    by Zach Saucier
+    https://css-tricks.com/controlling-css-animations-transitions-javascript/
+    -->
+
+    <!-- navgation bar start from here -->
+
+    <div id="navgation-bar">
+      <nav class="main-nav-top flex-box">
+          <a id="call-left" href="#" class="flex-spaceholder-min top-items"><img src="img/hamburger.svg" alt="menu hamburger icon"></a>
+          <div class="flex-spaceholder-max top-items logo"><a href="index.html" ><img src="img/logo.png" alt="logo image"></a></div>
+          <a href="order-page-3.html" class="flex-spaceholder-min top-items book-button">BOOK NOW</a>
+      </nav>
+      <nav class="main-nav-left flex-box">
+        <div class="flex-box">
+          <div class="flex-spaceholder-max logo"><img src="img/logo.png" alt="logo image"></div>
+          <a id="close-left" href="#" class="flex-spaceholder-min main-nav-item">&#9587;</a>
+        </div>
+        <div class="nav-list-holder flex-spaceholder-max">
+          <ul class="nav-list">
+            <li><a href="index.html" class="main-nav-item">HOME</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="room-list.html" class="main-nav-item">ROOMS</a></li>
+            <li><a href="promotion.html" class="main-nav-item">GREAT DEALS</a></li>
+            <li><a href="restaurant.html" class="main-nav-item">RESTAURANTS</a></li>
+            <li><a href="private-events.html" class="main-nav-item">PRIVATE EVENTS</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="About.html" class="main-nav-item">ABOUT</a></li>
+            <li><a href="Contact.html" class="main-nav-item">CONTACT</a></li>
+          </ul>
+
+        </div>
+
+        <div class="flex-spaceholder-min flex-box language">
+          <!-- <a href="#" class="main-nav-item">EN</a>
+          <a href="#" class="main-nav-item">FR</a>
+          <a href="#" class="main-nav-item">IT</a>
+          <a href="#" class="main-nav-item">ES</a>
+          <a href="#" class="main-nav-item">東大</a>
+          <a href="#" class="main-nav-item">ZH</a>
+          <a href="#" class="main-nav-item">PT</a>
+          <a href="#" class="main-nav-item">DE</a> -->
+        </div>
+      </nav>
+    </div>
+
+    <!-- navgation bar ends here -->
+
+    <section id="room-rate-page">
+      <div>
+      <h1>ROOMS & RATES</h1>
+      </div>
+
+      <div id="top-info">
+        <div id="left-info">
+        <p>YOUR STAY: 5/20/2020 - 5/25/2020 GUEST: 1 ADULT</p>
+
+        <div id="right-info">
+        <a href="roomReview.html" id="modify">MODIFY</a>
+        </div>
+
+      </div>
+      </div>
+
+
+      <div id="queen-info">
+
+        <div id="queen-left">
+
+        <div>
+        <h3 id="QUEEN-WITH-GREAT-VIEW">QUEEN WITH GREAT VIEW</h3>
+        <p id="queen-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+        </div>
+
+        <div id="queen-right">
+        <h3>From</h3>
+          <div><span class="enlarge-number">416.90</span>CAD/NIGHT <br>EXCLUDING TAXES &FEES </div>
+          <div id="more-info-button"><a href="#" class="more-info">MORE INFO</a></div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="order-page-room-image">
+        <div id="order-page-room-image1">
+
+        </div>
+
+        <div id="order-page-room-image2">
+
+        </div>
+
+        <div id="order-page-room-image3">
+
+        </div>
+
+        <div id="order-page-room-image4">
+
+        </div>
+
+        <div id="order-page-room-image5">
+
+        </div>
+
+<!--         <div id="order-page-room-image6">
+
+        </div> -->
+
+      </div>
+
+
+
+      <div id="go-check-out">
+        <div id="room-feature">
+
+        <h2>QUEEN</h2>
+        <ul id="specific-feature">
+          <li>1 TEMPUR-Cloud® Supreme king-sized bed</li>
+          <li>Private bath with rainfall shower and massage body jets</li>
+          <li>Seating area</li>
+          <li>Welcome bottle of Robert Mondavi wine</li>
+        </ul>
+        <a href="#" id="READ-MORE">READ MORE</a>
+
+
+          <div id="more-check-out">
+          <h2>FROM<h2>
+          <div><span id="enlarge-number">416.90</span>CAD/NIGHT <br>EXCLUDING TAXES &FEES </div>
+          <div id="select-button"><a href="order-page-4.html" class="select-button">CONFIRM</a></div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section> <!-- end of product-page section -->
+
+
+
+    <!-- footer starts here -->
+
+    <footer class="flex-box">
+
+      <address class="flex-spaceholder-min flex-box left-footer">
+        <div class="logo flex-spaceholder-min">
+          <img src="img/logo.png" alt="logo image">
+        </div>
+        <div class="flex-placeholder-min">
+          <p>
+            305 Cambie STREET<br>
+            VANCOUVER BC V5H0C7
+          </p>
+        </div>
+        <div class="flex-spaceholder-min">
+          <a href="Contact.html" class="footer-button">FIND US</a>
+        </div>
+        <div class="flex-spaceholder-min">
+          <p>
+            PHONE 299 374 50000<br>
+            EMAIL INFO@XXXXHOTELS.COM
+          </p>
+        </div>
+      </address>
+
+      <div class="flex-spaceholder-max right-footer flex-box">
+        <div class="footer-nav flex-box flex-spaceholder-min">
+          <a href="index.html" class="flex-spaceholder-max">HOME</a>
+          <a href="room-list.html" class="flex-spaceholder-max">ROOMS</a>
+          <a href="promotion.html" class="flex-spaceholder-max">GREAT DEALS</a>
+          <a href="restaurant.html" class="flex-spaceholder-max">RESTAURANTS</a>
+          <a href="private-events.html" class="flex-spaceholder-max">PRIVATE EVENTS</a>
+          <a href="About.html" class="flex-spaceholder-max">ABOUT</a>
+          <a href="Contact.html" class="flex-spaceholder-max">CONTACT</a>
+        </div>
+        <a href="order-page-3.html" class="footer-button flex-spaceholder-min">MODIFY RESERVATION</a>
+      </div>
+      <br>
+
+      <div class="icon-section">
+        <div class="flex-box icon-holder flex-spaceholder-min">
+          <a href="https://www.facebook.com/" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Facebook_1.svg" alt="Facebook icon">
+          </a>
+          <a href="https://www.google.com/" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Google+_1.svg" alt="Google+ icon">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Instagram_1.svg" alt="Instagram icon">
+          </a>
+          <a href="https://twitter.com/explore" target="_blank" class="flex-spaceholder-min link-icon">
+            <img src="img/Twitter_1.svg" alt="Twitter icon">
+          </a>
+        </div>
+
+        <p class="flex-spaceholder-min">
+
+        </p>
+      </div>
+
+    </footer>
+
+    <!-- end of footer section -->
+  </body>
+</html>

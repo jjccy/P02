@@ -513,6 +513,10 @@ position:absolute; right:20px;
   font-family: 'Ubuntu', sans-serif;
 }
 
+.add-top-border{
+  border-top:2px solid black;
+  padding-top: 1em;
+}
  @media screen and (max-width:400px){
    
   .logo{

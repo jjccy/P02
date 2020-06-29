@@ -1,0 +1,147 @@
+#checkout-info-page {
+  padding: 5em 15em;
+  background-color: #EEE;
+}
+
+#top-info{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+#left-info{
+
+  display: flex;
+  justify-content: left;
+  flex-grow: 1;
+
+
+}
+
+#right-info{
+  flex-grow: 1;
+  text-align: right;
+  padding-top: 1em;
+}
+
+.input-contain {
+  margin: 3.5em 0;
+}
+
+.input-section {
+  align-items: flex-start;
+  width: 100%;
+}
+
+.input-column {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.input-section > .input-column:first-child {
+  margin-right: 2em;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.input-name, .input-box {
+  text-transform: uppercase;
+}
+
+.input-name {
+  flex-basis: 30%;
+}
+
+.input-box {
+  padding: .5em;
+}
+
+
+
+.REVIEW-RESERVATION {
+  text-decoration: underline;
+  text-align: right;
+  color: gray;
+
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.REVIEW-RESERVATION:hover {
+  color: #1A331E;
+}
+
+.CONFIRM-RESERVATION{
+  border: 2px solid black;
+  padding: 0.5em 2em;
+  flex-basis: 10%;
+  text-align: center;
+
+  max-width: 14.5em;
+
+  font-size:9pt;
+  text-decoration: none;
+  color: black;
+
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+
+}
+
+.CONFIRM-RESERVATION:hover{
+  background-color: #1A331E;
+  color: white;
+  border-color: #1A331E;
+}
+
+.review-link{
+  margin-top: 0.5em;
+}
+
+.confirm-button{
+  margin-top: 2em;
+}
+
+#modify {
+  text-decoration: underline;
+  text-align: right;
+  color: gray;
+
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+#modify:hover, #modify:active {
+  color: #1A331E;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  #checkout-info-page *{
+    font-size: 20pt;
+  }
+
+  #checkout-info-page {
+    padding: 7em;
+    padding-top: 15em;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-column {
+    width: 100%;
+  }
+
+}

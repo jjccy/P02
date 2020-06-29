@@ -1,0 +1,4 @@
+all .css goes to css folder
+all images goes to img folder
+all .js goes to script folder
+all fonts goes to font folder
