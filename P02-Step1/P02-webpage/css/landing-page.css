@@ -1,0 +1,143 @@
+
+.index-image-holder {
+  width: 100%;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  position: relative;
+}
+
+.index-text-holder {
+  width: inherit;
+  height: inherit;
+  margin: auto;
+
+  position: relative;
+}
+
+.index-text-holder > p:first-child {
+  margin-top: 45vh;
+  width: inherit;
+
+  font-size: 3.5em;
+  font-weight: 500;
+
+  text-align: center;
+  text-shadow: .1em .1em .1em #1A331E;
+
+  color: white;
+
+  position: absolute;
+}
+
+.mobile-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  padding: 15vh 12vw 0;
+  color: #EEE;
+  background-color: rgba(0,0,0,0.05);
+
+  text-shadow: 1em 1em 1em #1A331E;
+
+  visibility: hidden;
+}
+
+.about-ding{
+  /*  border: 10px solid black;*/
+  padding: 3em 3em;
+  text-align: center;
+}
+
+.index-text-holder > .index-title {
+  font-size: 10em;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+
+  bottom: 15vh;
+  left: 7vw;
+
+  position: absolute;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.index-text-holder > .index-title:hover,
+.index-text-holder > .index-title:active,
+.index-text-holder > .index-title:focus{
+  color: #1A331E;
+  text-shadow: .03em .03em .05em #FFFFFF;
+  text-decoration: none;
+}
+
+.review-section{
+  padding: 5em;
+  background-color: white;
+}
+
+
+.room-content-left-section{
+  width: 80%;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+  #wrapper p {
+    font-size: 23pt;
+  }
+
+  #wrapper h3 {
+    font-size: 23pt;
+  }
+
+  .index-text-holder > p:first-child {
+    visibility: hidden;
+  }
+
+  .index-image-holder {
+    height: 70vh;
+  }
+
+  .cover-page{
+    width: 100%;
+    height: 50vh;
+  }
+  .mobile-title {
+    visibility: visible;
+  }
+
+  .mobile-title > h1 {
+    font-size: 8em;
+    font-weight: 800;
+  }
+
+  .room-content-left-section{
+    width: 100%;
+    border: none;
+    padding-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .review-section{
+    padding: 5em;
+  }
+  .star-reviewed{
+    padding: 3em;
+  }
+}
