@@ -10,3 +10,5 @@ CSS-Only Carousel | CSS-Tricks. (2020). Retrieved 20 June 2020, from https://css
 
 
 https://www.vectorstock.com/royalty-free-vector/smile-icon-happy-face-symbol-vector-23730730
+
+Favicon Generator for perfect icons on all browsers. (2020). Retrieved 30 June 2020, from https://realfavicongenerator.net/favicon_result?file_id=p1ec23mvp317df18nedci1lds5066#.Xvrw4ShKhEY
