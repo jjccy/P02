@@ -92,7 +92,27 @@
   width: 80%;
 }
 
+.submit-button {
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  word-spacing: 0.02em;
 
+  padding: 1em 2em;
+  border: 1px solid black;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+
+.submit-button:hover{
+    background-color: #314820;
+    color: white;
+}
 
 
 @media screen and (max-width: 1000px) {
