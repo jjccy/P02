@@ -41,7 +41,7 @@
 }
 
 .input-section > .input-column:first-child {
-  margin-right: 2em;
+  margin-right: 7em;
 }
 
 .input {
@@ -54,7 +54,7 @@
 }
 
 .input-name {
-  flex-basis: 30%;
+  flex-basis: 25%;
 }
 
 .input-box {
