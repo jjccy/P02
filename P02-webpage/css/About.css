@@ -1,6 +1,9 @@
 /*#img-container {
   width: 50%;
 }*/
+
+
+
 .about {
   flex-wrap: -webkit-wrap;
   flex-wrap: -ms-wrap;
@@ -30,27 +33,31 @@
 .mission-content{
   padding: 4em 4em;
   background-color: lightgray;
+  text-align: center;
 }
 
 .purpose-content{
   padding: 4em 4em;
+
+  text-align: center;
 }
 .values-content{
   padding: 4em 4em;
   background-color: lightgray;
+  text-align: center;
 
  }
 .mission-page-img{
   width: 100%;
 }
 .mission-text{
-  width: 75%;
+  width: 100%;
 }
 .purpose-text{
-  width: 75%;
+  width: 100%;
 }
 .values-text{
-  width: 75%;
+  width: 100%;
 }
 
  @media screen and (max-width: 1000px) {
