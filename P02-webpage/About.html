@@ -104,20 +104,26 @@
 
     <!-- navgation bar ends here -->
 
-      <div id="img-container">
+      <div id="img-container" style="background-image: url('img/Sanya4.jpg');">
+        <div class="about-text-holder">
+          <p>ABOUT</p>
+        </div>
 
-        <img src="img/Sanya4.jpg" class="mission-page-img" alt="intro image for about page">
+        <!-- mobile text title area, hidden in desktop -->
 
+        <div class="mobile-title">
+          <p>ABOUT</p>
+        </div>
 
       </div>
 
       <div class="about flex-box">
-        <a href="#" class="flex-spaceholder-max about-button">MISSION</a>
-        <a href="#" class="flex-spaceholder-max about-button">PURPOSE</a>
-        <a href="#" class="flex-spaceholder-max about-button">VALUES</a>
+        <a href="#mission" class="flex-spaceholder-max about-button">MISSION</a>
+        <a href="#purpose" class="flex-spaceholder-max about-button">PURPOSE</a>
+        <a href="#value" class="flex-spaceholder-max about-button">VALUES</a>
       </div>
 
-      <div class="mission-content">
+      <div class="mission-content" id="mission">
       <h1>MISSION</h1>
       <br><br>
       <div class="mission-text">
@@ -132,7 +138,7 @@
 
       </div>
 
-      <div class="purpose-content">
+      <div class="purpose-content" id="purpose">
       <h1>PURPOSE</h1>
       <br><br>
       <div class="purpose-text">
@@ -142,7 +148,7 @@
       </div>
       </div>
 
-      <div class="values-content">
+      <div class="values-content" id="value">
       <h1>VALUES</h1>
       <br><br>
       <div class="values-text">
