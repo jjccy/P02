@@ -517,6 +517,11 @@ position:absolute; right:20px;
   border-top:2px solid black;
   padding-top: 1em;
 }
+
+.citation{
+  padding: 2em 2em;
+  border: 1px solid black;
+}
  @media screen and (max-width:400px){
    
   .logo{

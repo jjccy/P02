@@ -1,0 +1,158 @@
+footer {
+  padding: 3em 5em;
+  background-color: #111111;
+  position: relative;
+
+  justify-content: space-between;
+
+  align-items:flex-start !important;
+}
+
+footer, footer a {
+  color: #EEE;
+  text-decoration: none;
+
+  transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.left-footer {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start !important;
+
+  padding-right: 20vw;
+}
+
+.left-footer > .flex-spaceholder-min{
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.logo img {
+  max-height: 4em;
+  width: auto;
+}
+
+.footer-button {
+  text-decoration: none !important;
+  font-style: normal;
+  font-size: 0.85em;
+
+  padding: .8em 2.4em;
+  border: 1px solid #EEE;
+}
+
+.footer-button:hover, .footer-button:active {
+  color: #111111;
+  background-color: #EEE;
+  border-color: #EEE;
+}
+
+.right-footer {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-footer .flex-box {
+  flex-wrap: wrap;
+}
+
+.footer-nav {
+  margin-bottom: 2.5em;
+  margin-top: 4em;
+  align-self: stretch;
+}
+
+.footer-nav > a {
+  font-size: 0.87em;
+  text-align:right;
+  font-weight: 700;
+  color: #CCC;
+  margin: 0 .5em .5em;
+}
+
+.footer-nav > a:hover, .footer-nav > a:active {
+  color: #EEE;
+  text-decoration: underline;
+}
+
+.icon-section {
+  position: absolute;
+  bottom: 3em;
+  right: 5em;
+  text-align: right;
+}
+
+.icon-holder {
+  width: 15em;
+}
+
+.link-icon {
+  flex-basis: 3em;
+}
+
+.link-icon > img{
+  max-height: 2em;
+  width: auto;
+
+  opacity: 1;
+
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.link-icon > img:hover, .link-icon > img:active {
+  opacity: 0.5;
+}
+
+.icon-section > p {
+  font-size: 0.75em;
+  font-weight: 100;
+  padding-right: .7em;
+}
+
+@media screen and (max-width: 1000px) {
+
+  footer * {
+    font-size: 40px;
+  }
+
+  footer, .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    align-items: flex-start;
+  }
+
+  .footer-nav > a {
+    padding-bottom: 1em;
+  }
+
+  .right-footer > .footer-button {
+    visibility: hidden;
+  }
+
+  .left-footer {
+    margin-top: -5em;
+    order: 2;
+  }
+
+  .right-footer {
+    order: 1;
+  }
+
+  .icon-section {
+    position: static;
+    order: 5;
+    text-align: left;
+  }
+
+  .icon-holder {
+    margin-left: -0.88em;
+  }
+}
