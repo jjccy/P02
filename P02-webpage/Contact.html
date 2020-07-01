@@ -21,7 +21,6 @@
     -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="script/main-nav.js"></script>
-    <script type="text/javascript" src="script/Contact.js"></script>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bElements.css">
@@ -42,11 +41,24 @@
     <!-- navgation bar start from here -->
 
     <div id="navgation-bar">
+      <nav class="mobile-backup-nav">
+        <div class="backup-nav flex-box">
+            <a href="index.html" class="flex-spaceholder-max">HOME</a>
+            <a href="room-list.html" class="flex-spaceholder-max">ROOMS</a>
+            <a href="promotion.html" class="flex-spaceholder-max">GREAT DEALS</a>
+            <a href="restaurant.html" class="flex-spaceholder-max">RESTAURANTS</a>
+            <a href="private-events.html" class="flex-spaceholder-max">PRIVATE EVENTS</a>
+            <a href="About.html" class="flex-spaceholder-max">ABOUT</a>
+            <a href="Contact.html" class="flex-spaceholder-max">CONTACT</a>
+        </div>
+      </nav>
+
       <nav class="main-nav-top flex-box">
           <a id="call-left" href="#" class="flex-spaceholder-min top-items"><img src="img/hamburger.svg" alt="menu hamburger icon"></a>
           <div class="flex-spaceholder-max top-items logo"><a href="index.html" ><img src="img/logo.png" alt="logo image"></a></div>
           <a href="order-page-3.html" class="flex-spaceholder-min top-items book-button">BOOK NOW</a>
       </nav>
+
       <nav class="main-nav-left flex-box">
         <div class="flex-box">
           <div class="flex-spaceholder-max logo"><img src="img/logo.png" alt="logo image"></div>
@@ -102,11 +114,16 @@
 
       <br><br>
 
-      <a href="#" class="google-map-button">OPEN IN GOOGLE MAP</a>
+      <label for="googleMap">
+        <a href="https://www.google.com/maps" class="google-map-button" target="_blank">OPEN IN GOOGLE MAP</a>
+      </label>
+
 
 
       <div id="googlemap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11385.308798990058!2d-123.11834724345074!3d49.27763048530349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486718308f23283%3A0x6643d8bcbabc7a90!2sHotel%20Fairmont%20Pacific%20Rim!5e0!3m2!1sen!2sca!4v1592124259512!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11385.308798990058!2d-123.11834724345074!3d49.27763048530349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486718308f23283%3A0x6643d8bcbabc7a90!2sHotel%20Fairmont%20Pacific%20Rim!5e0!3m2!1sen!2sca!4v1592124259512!5m2!1sen!2sca"
+        width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" name="googleMap">
+        </iframe>
       </div>
 
 

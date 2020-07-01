@@ -12,6 +12,15 @@ $(document).ready(function() {
     'opacity' : '0'
   });
 
+  $(".mobile-backup-nav").css({
+    'position' : 'fixed'
+  });
+
+  $(".mobile-backup-nav").css({
+    'top' : '-28em'
+  });
+
+
   $("#call-left").click(function(event) {
     event.preventDefault();
     appear = true;
