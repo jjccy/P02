@@ -1,33 +1,26 @@
+.container {
+	text-align: center;
+	margin-top: 5em;
+}
+
 img{
 	width: 20%;
-	margin-left: 40em;
-
+	margin: auto;
 }
+
 h1{
-	text-align: center;
 	margin-top:1em;
 }
 
-p{
-	text-align: center;
-
-}
 
 @media screen and (max-width: 1000px) {
-
-
-	img{
-		margin-top: 30em;
-		margin-left: 25em;
+	h1{
+		font-size: 6em;
 	}
 
-h1{
-	font-size: 6em;
-}
-
-p{
-	font-size:2em;
-}
-
-
+	p{
+		font-size:2em;
 	}
+
+
+}
