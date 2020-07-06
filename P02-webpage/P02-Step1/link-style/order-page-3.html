@@ -8,8 +8,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -19,9 +19,9 @@
     Author Jimmy Chu, Jay Zhao
     With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
     -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="script/main-nav.js"></script>
-    <script type="text/javascript" src="script/room-list.js"></script>
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="script/main-nav.js"></script>
+    <script  src="script/room-list.js"></script>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bElements.css">
@@ -42,11 +42,24 @@
     <!-- navgation bar start from here -->
 
     <div id="navgation-bar">
+      <nav class="mobile-backup-nav">
+        <div class="backup-nav flex-box">
+            <a href="index.html" class="flex-spaceholder-max">HOME</a>
+            <a href="room-list.html" class="flex-spaceholder-max">ROOMS</a>
+            <a href="promotion.html" class="flex-spaceholder-max">GREAT DEALS</a>
+            <a href="restaurant.html" class="flex-spaceholder-max">RESTAURANTS</a>
+            <a href="private-events.html" class="flex-spaceholder-max">PRIVATE EVENTS</a>
+            <a href="About.html" class="flex-spaceholder-max">ABOUT</a>
+            <a href="Contact.html" class="flex-spaceholder-max">CONTACT</a>
+        </div>
+      </nav>
+
       <nav class="main-nav-top flex-box">
           <a id="call-left" href="#" class="flex-spaceholder-min top-items"><img src="img/hamburger.svg" alt="menu hamburger icon"></a>
           <div class="flex-spaceholder-max top-items logo"><a href="index.html" ><img src="img/logo.png" alt="logo image"></a></div>
           <a href="order-page-3.html" class="flex-spaceholder-min top-items book-button">BOOK NOW</a>
       </nav>
+
       <nav class="main-nav-left flex-box">
         <div class="flex-box">
           <div class="flex-spaceholder-max logo"><img src="img/logo.png" alt="logo image"></div>
@@ -106,8 +119,13 @@
         <div id="queen-left">
 
         <div>
-        <h3 id="QUEEN-WITH-GREAT-VIEW">QUEEN WITH GREAT VIEW</h3>
-        <p id="queen-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <h2 id="QUEEN-WITH-GREAT-VIEW">QUEEN WITH GREAT VIEW</h2>
+        <p id="queen-content">
+          Twice daily housekeeping service<br>
+          Fully stocked minibar<br>
+          Complimentary bottled water daily<br>
+          Newspapers of your choice delivered to your door upon request <br>
+          </p>
         </div>
 
         </div>
@@ -159,31 +177,35 @@
       <div id="go-check-out">
         <div id="room-feature">
 
-        <h2>QUEEN</h2>
-        <ul id="specific-feature">
-          <li>1 TEMPUR-Cloud® Supreme king-sized bed</li>
-          <li>Private bath with rainfall shower and massage body jets</li>
-          <li>Seating area</li>
-          <li>Welcome bottle of Robert Mondavi wine</li>
-          <li>Minibar contains sodas, bottled water, juices, domestic and imported beers (refreshed daily)</li>
-          <li>Espresso maker</li>
-          <li>Direct-dial telephone</li>
-          <li>Alarm clock with wake-up light/radio/iPod dock with Bluetooth connection</li>
-          <li>Bathroom scale</li>
-          <li>Iron/ironing board</li>
-          <li>Umbrellae</li>
-          <li>Nightly petit fours</li>
-          <li>24-hour room service and nightly turndown service</li>
-          <li>Individually controlled A/C</li>
-        </ul>
-        <!--
-        <a href="#" id="READ-MORE">READ MORE</a>
-      -->
+          <h2>QUEEN</h2>
+          <ul id="specific-feature">
+            <li>1 TEMPUR-Cloud® Supreme king-sized bed</li>
+            <li>Private bath with rainfall shower and massage body jets</li>
+            <li>Seating area</li>
+            <li>Welcome bottle of Robert Mondavi wine</li>
+            <li>Minibar contains sodas, bottled water, juices, domestic and imported beers (refreshed daily)</li>
+            <li>Espresso maker</li>
+            <li>Direct-dial telephone</li>
+            <li>Alarm clock with wake-up light/radio/iPod dock with Bluetooth connection</li>
+            <li>Bathroom scale</li>
+            <li>Iron/ironing board</li>
+            <li>Umbrellae</li>
+            <li>Nightly petit fours</li>
+            <li>24-hour room service and nightly turndown service</li>
+            <li>Individually controlled A/C</li>
+          </ul>
+          <!--
+          <a href="#" id="READ-MORE">READ MORE</a>
+          -->
 
           <div id="more-check-out">
-          <h2>FROM<h2>
-          <div><span id="enlarge-number">416.90</span>CAD/NIGHT <br>EXCLUDING TAXES &FEES </div>
-          <div id="select-button"><a href="order-page-4.html" class="select-button">CONFIRM</a></div>
+            <h2>FROM</h2>
+            <div>
+              <span id="enlarge-number">416.90</span>CAD/NIGHT <br>EXCLUDING TAXES &FEES
+            </div>
+            <div id="select-button">
+              <a href="order-page-4.html" class="select-button">CONFIRM</a>
+            </div>
           </div>
 
         </div>

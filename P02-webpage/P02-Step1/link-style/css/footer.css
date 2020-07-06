@@ -45,7 +45,7 @@ footer, footer a {
   border: 1px solid #EEE;
 }
 
-.footer-button:hover, .footer-button:active {
+.footer-button:hover, .footer-button:active, .footer-button:focus {
   color: #111111;
   background-color: #EEE;
   border-color: #EEE;
@@ -74,7 +74,7 @@ footer, footer a {
   margin: 0 .5em .5em;
 }
 
-.footer-nav > a:hover, .footer-nav > a:active {
+.footer-nav > a:hover, .footer-nav > a:active, .footer-nav > a:focus{
   color: #EEE;
   text-decoration: underline;
 }

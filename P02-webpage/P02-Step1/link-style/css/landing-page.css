@@ -56,6 +56,11 @@
   text-align: center;
 }
 
+.about-ding > p:first-child {
+  font-weight: 300;
+  font-size: .83em;
+}
+
 .index-text-holder > .index-title {
   font-size: 10em;
   font-weight: 800;
@@ -97,12 +102,18 @@
 }
 
 #w3review {
+  margin-top: 0.83em;
   margin-bottom: 2em;
   width: 100%;
   height: 16em;
   padding: 2em;
 
   content: none;
+}
+
+.comment-section > label:first-child {
+  font-weight: 300;
+  font-size: 1.67em;
 }
 
 .submit-button {
@@ -154,6 +165,11 @@
   .index-image-holder {
     height: 70vh;
   }
+
+  #wrapper > .index-image-holder:first-child {
+    min-height: 650pt;
+  }
+
 
   .cover-page{
     width: 100%;

@@ -8,8 +8,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -19,8 +19,8 @@
     Author Jimmy Chu, Jay Zhao
     With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
     -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="script/main-nav.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="script/main-nav.js"></script>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bElements.css">
@@ -37,225 +37,229 @@
     Controlling CSS Animations and Transitions with JavaScript
     by Zach Saucier
     https://css-tricks.com/controlling-css-animations-transitions-javascript/
-  -->
+    -->
 
-  <!-- navgation bar start from here -->
+    <!-- navgation bar start from here -->
 
-  <div id="navgation-bar">
-    <nav class="main-nav-top flex-box">
-        <a id="call-left" href="#" class="flex-spaceholder-min top-items"><img src="img/hamburger.svg" alt="menu hamburger icon"></a>
-        <div class="flex-spaceholder-max top-items logo"><a href="index.html" ><img src="img/logo.png" alt="logo image"></a></div>
-        <a href="order-page-3.html" class="flex-spaceholder-min top-items book-button">BOOK NOW</a>
-    </nav>
-    <nav class="main-nav-left flex-box">
-      <div class="flex-box">
-        <div class="flex-spaceholder-max logo"><img src="img/logo.png" alt="logo image"></div>
-        <a id="close-left" href="#" class="flex-spaceholder-min main-nav-item">&#9587;</a>
-      </div>
-      <div class="nav-list-holder flex-spaceholder-max">
-        <ul class="nav-list">
-          <li><a href="index.html" class="main-nav-item">HOME</a></li>
-        </ul>
-        <ul class="nav-list">
-          <li><a href="room-list.html" class="main-nav-item">ROOMS</a></li>
-          <li><a href="promotion.html" class="main-nav-item">GREAT DEALS</a></li>
-          <li><a href="restaurant.html" class="main-nav-item">RESTAURANTS</a></li>
-          <li><a href="private-events.html" class="main-nav-item">PRIVATE EVENTS</a></li>
-        </ul>
-        <ul class="nav-list">
-          <li><a href="About.html" class="main-nav-item">ABOUT</a></li>
-          <li><a href="Contact.html" class="main-nav-item">CONTACT</a></li>
-        </ul>
+    <div id="navgation-bar">
+      <nav class="mobile-backup-nav">
+        <div class="backup-nav flex-box">
+            <a href="index.html" class="flex-spaceholder-max">HOME</a>
+            <a href="room-list.html" class="flex-spaceholder-max">ROOMS</a>
+            <a href="promotion.html" class="flex-spaceholder-max">GREAT DEALS</a>
+            <a href="restaurant.html" class="flex-spaceholder-max">RESTAURANTS</a>
+            <a href="private-events.html" class="flex-spaceholder-max">PRIVATE EVENTS</a>
+            <a href="About.html" class="flex-spaceholder-max">ABOUT</a>
+            <a href="Contact.html" class="flex-spaceholder-max">CONTACT</a>
+        </div>
+      </nav>
 
-      </div>
+      <nav class="main-nav-top flex-box">
+          <a id="call-left" href="#" class="flex-spaceholder-min top-items"><img src="img/hamburger.svg" alt="menu hamburger icon"></a>
+          <div class="flex-spaceholder-max top-items logo"><a href="index.html" ><img src="img/logo.png" alt="logo image"></a></div>
+          <a href="order-page-3.html" class="flex-spaceholder-min top-items book-button">BOOK NOW</a>
+      </nav>
 
-      <div class="flex-spaceholder-min flex-box language">
-        <!-- <a href="#" class="main-nav-item">EN</a>
-        <a href="#" class="main-nav-item">FR</a>
-        <a href="#" class="main-nav-item">IT</a>
-        <a href="#" class="main-nav-item">ES</a>
-        <a href="#" class="main-nav-item">東大</a>
-        <a href="#" class="main-nav-item">ZH</a>
-        <a href="#" class="main-nav-item">PT</a>
-        <a href="#" class="main-nav-item">DE</a> -->
-      </div>
-    </nav>
-  </div>
+      <nav class="main-nav-left flex-box">
+        <div class="flex-box">
+          <div class="flex-spaceholder-max logo"><img src="img/logo.png" alt="logo image"></div>
+          <a id="close-left" href="#" class="flex-spaceholder-min main-nav-item">&#9587;</a>
+        </div>
+        <div class="nav-list-holder flex-spaceholder-max">
+          <ul class="nav-list">
+            <li><a href="index.html" class="main-nav-item">HOME</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="room-list.html" class="main-nav-item">ROOMS</a></li>
+            <li><a href="promotion.html" class="main-nav-item">GREAT DEALS</a></li>
+            <li><a href="restaurant.html" class="main-nav-item">RESTAURANTS</a></li>
+            <li><a href="private-events.html" class="main-nav-item">PRIVATE EVENTS</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="About.html" class="main-nav-item">ABOUT</a></li>
+            <li><a href="Contact.html" class="main-nav-item">CONTACT</a></li>
+          </ul>
 
-  <!-- navgation bar ends here -->
-
-  <section id="checkout-info-page">
-
-    <div id="top-info">
-      <div id="left-info">
-        <p>YOUR STAY: 5/20/2020 - 5/25/2020 GUEST: 1 ADULT</p>
-
-        <div id="right-info">
-          <a href="roomReview.html" id="modify">MODIFY</a>
         </div>
 
-      </div>
+        <div class="flex-spaceholder-min flex-box language">
+          <!-- <a href="#" class="main-nav-item">EN</a>
+          <a href="#" class="main-nav-item">FR</a>
+          <a href="#" class="main-nav-item">IT</a>
+          <a href="#" class="main-nav-item">ES</a>
+          <a href="#" class="main-nav-item">東大</a>
+          <a href="#" class="main-nav-item">ZH</a>
+          <a href="#" class="main-nav-item">PT</a>
+          <a href="#" class="main-nav-item">DE</a> -->
+        </div>
+      </nav>
     </div>
 
-    <div class="input-contain"> <!-- start of one input contain -->
-      <h2>PERSONAL INFORMATION</h2>
+    <!-- navgation bar ends here -->
 
-      <div class="input-section flex-box"> <!-- start one input section -->
+    <section id="checkout-info-page">
 
-        <div class="input-column flex-box flex-spaceholder-min">
+      <div id="top-info">
+        <div id="left-info">
+          <p>YOUR STAY: 5/20/2020 - 5/25/2020 GUEST: 1 ADULT</p>
 
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="title">Title</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="title">
+          <div id="right-info">
+            <a href="roomReview.html" id="modify">MODIFY</a>
           </div>
 
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="fname">First name</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="fname">
-          </div>
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="mi">Middle initial</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="mi">
-          </div>
         </div>
+      </div>
 
-        <div class="input-column flex-box flex-spaceholder-min">
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="lname">Last name</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="lname">
+      <div class="input-contain"> <!-- start of one input contain -->
+        <h2>PERSONAL INFORMATION</h2>
+
+        <div class="input-section flex-box"> <!-- start one input section -->
+
+          <div class="input-column flex-box flex-spaceholder-min">
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="title">Title</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="title">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="fname">First name</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="fname">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="mi">Middle initial</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="mi">
+            </div>
           </div>
 
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="email">E-mail</label>
-            <input class="input-box flex-spaceholder-min" type="email" id="email">
+          <div class="input-column flex-box flex-spaceholder-min">
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="lname">Last name</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="lname">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="email">E-mail</label>
+              <input class="input-box flex-spaceholder-min" type="email" id="email">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="remail">Conform email</label>
+              <input class="input-box flex-spaceholder-min" type="email" id="remail">
+            </div>
           </div>
 
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="remail">Conform email</label>
-            <input class="input-box flex-spaceholder-min" type="email" id="remail">
-          </div>
-        </div>
+        </div> <!-- end one input section -->
 
-      </div> <!-- end one input section -->
-
-      <div>
-        <form action="/action_page.php">
-          <input type="checkbox"  name="create-new-account" value="account">
+        <div>
+          <input type="checkbox" id="create-new-account" value="account">
           <label for="create-new-account">CREATE NEW ACCOUNT</label>
-        </form>
-      </div>
-
-    </div> <!-- end of one input contain -->
-
-    <div class="input-contain"> <!-- start of one input contain -->
-      <h2>ADDRESS</h2>
-
-      <div class="input-section flex-box"> <!-- start one input section -->
-
-        <div class="input-column flex-box flex-spaceholder-min">
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="cname">Company name</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="cname">
-          </div>
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="address">Address</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="address">
-          </div>
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="province">State / Province</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="province">
-          </div>
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="phone">Phone</label>
-            <input class="input-box flex-spaceholder-min" type="tel" id="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-          </div>
         </div>
 
-        <div class="input-column flex-box flex-spaceholder-min">
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="country">Country</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="country">
+      </div> <!-- end of one input contain -->
+
+      <div class="input-contain"> <!-- start of one input contain -->
+        <h2>ADDRESS</h2>
+
+        <div class="input-section flex-box"> <!-- start one input section -->
+
+          <div class="input-column flex-box flex-spaceholder-min">
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="cname">Company name</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="cname">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="address">Address</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="address">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="province">State / Province</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="province">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="phone">Phone</label>
+              <input class="input-box flex-spaceholder-min" type="tel" id="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
           </div>
 
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="city">City</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="city">
+          <div class="input-column flex-box flex-spaceholder-min">
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="country">Country</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="country">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="city">City</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="city">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="postCode">Postal Code</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="postCode">
+            </div>
           </div>
 
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="postCode">Postal Code</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="postCode">
+        </div> <!-- end one input section -->
+
+      </div> <!-- end of one input contain -->
+
+      <div class="input-contain"> <!-- start of one input contain -->
+        <h2>PERSONAL INFORMATION</h2>
+
+        <div class="input-section flex-box"> <!-- start one input section -->
+
+          <div class="input-column flex-box flex-spaceholder-min">
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="payment">Payment method</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="payment">
+            </div>
+
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="cardholder">Cardholder name</label>
+              <input class="input-box flex-spaceholder-min" type="text" id="cardholder">
+            </div>
           </div>
+
+          <div class="input-column flex-box flex-spaceholder-min">
+            <div class="input flex-box flex-spaceholder-min">
+              <label class="input-name flex-spaceholder-min" for="cardNum">Card number</label>
+              <input class="input-box flex-spaceholder-min" type="number" id="cardNum">
+            </div>
+          </div>
+
+        </div> <!-- end one input section -->
+
+
+
+        <div>
+          <input type="checkbox"  id="acknowledge" value="account">
+          <label for="acknowledge">PLEASE ACKNOWLEDGE THAT YOU HAVE READ AND ACCEPT OUR PRIVACY POLICY</label>
         </div>
 
-      </div> <!-- end one input section -->
 
-    </div> <!-- end of one input contain -->
-
-    <div class="input-contain"> <!-- start of one input contain -->
-      <h2>PERSONAL INFORMATION</h2>
-
-      <div class="input-section flex-box"> <!-- start one input section -->
-
-        <div class="input-column flex-box flex-spaceholder-min">
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="payment">Payment method</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="payment">
-          </div>
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="cardholder">Cardholder name</label>
-            <input class="input-box flex-spaceholder-min" type="text" id="cardholder">
-          </div>
-        </div>
-
-        <div class="input-column flex-box flex-spaceholder-min">
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="cardNum">Card number</label>
-            <input class="input-box flex-spaceholder-min" type="number" id="cardNumr">
-          </div>
-
-          <div class="input flex-box flex-spaceholder-min">
-            <label class="input-name flex-spaceholder-min" for="expireDate">Expration date</label>
-            <input class="input-box flex-spaceholder-min" type="month" id="expireDate">
-          </div>
-        </div>
-
-      </div> <!-- end one input section -->
+      </div> <!-- end of one input contain -->
 
       <div>
-        <form action="/action_page.php">
-          <input type="checkbox"  name="create-new-account" value="account">
-          <label for="create-new-account">PLEASE ACKNOWLEDGE THAT YOU HAVE READ AND ACCEPT OUR PRIVACY POLICY.</label>
-        </form>
+        <h2>BOOKING POLICIES</h2>
+        <p>CANCELLATIONS:<br>
+          RESERVATIONS MUST BE CANCELLED BY 4PM 48 HOURS PRIOR TO ARRIVAL TO <br>
+          AVOID CHARGE OF ONE NIGHTS ROOM AND TAX<br>
+          BOOKINGS:<br>
+          CREDIT CARD REQUIRED TO GUARANTEE BOOKING.
+        </p>
       </div>
 
-
-    </div> <!-- end of one input contain -->
-
-    <div>
-      <h2>BOOKING POLICIES</h2>
-      <p>CANCELLATIONS:<br>
-        RESERVATIONS MUST BE CANCELLED BY 4PM 48 HOURS PRIOR TO ARRIVAL TO <br>
-        AVOID CHARGE OF ONE NIGHTS ROOM AND TAX<br>
-        BOOKINGS:<br>
-        CREDIT CARD REQUIRED TO GUARANTEE BOOKING.
-      </p>
-    </div>
-
-    <div>
-      <form action="/action_page.php">
-        <input type="checkbox"  name="create-new-account" value="account">
-        <label for="create-new-account">
+      <div>
+        <input type="checkbox" id="understand-policy" value="account">
+        <label for="understand-policy">
           PLEASE SPECIFY THAT YOU HAVE READ AND UNDERSTAND THE BOOKING POLICIES FOR YOUR ITINERARY.
         </label>
-        </form>
 
       </div>
 

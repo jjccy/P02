@@ -128,7 +128,7 @@
   line-height: 1em;
 }
 
-.info > span > p {
+.info > div > p {
   text-transform: uppercase;
   line-height: .1em;
   font-size: .8em;
