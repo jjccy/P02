@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -55,8 +55,8 @@ section code {
   margin-left: 3em;
   padding: 10px 20px;
   font-size: 12px;
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 2px solid black;
 }
 
@@ -126,7 +126,7 @@ font-size: 10pt;
 
 
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -161,8 +161,8 @@ font-size: 10pt;
 }
 
 .button1 {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 2px solid black;
 }
 
@@ -200,7 +200,7 @@ position:absolute; right:20px;
  }
 
  @media screen and (max-width:400px){
-   
+
   .button{
     margin-top: 10pt;
     padding: 10px 20px;
@@ -216,7 +216,7 @@ position:absolute; right:20px;
    text-align:center;
    margin-top: 0.5em;
   }
- 
+
 
 
  }
@@ -232,7 +232,7 @@ position:absolute; right:20px;
   padding: 2em;
   color:black;
   background-color: #C19467;
- } 
+ }
  .colorswatch3{
   text-align: center;
   padding: 2em;
@@ -245,13 +245,13 @@ position:absolute; right:20px;
   color:black;
   border: 1px solid black;
   background-color: #FFFFFF;
- } 
+ }
   .colorswatch5{
   text-align: center;
   padding: 2em;
   color:white;
   background-color: #314820;
- } 
+ }
 
  /*fully designed module*/
   *{
@@ -284,7 +284,7 @@ li{
   font-family: 'Ubuntu', sans-serif;
   padding: 0.5em;
 }
-  
+
   .king{
   font-family: 'Ubuntu', sans-serif;
   margin-left: 1em;
@@ -295,7 +295,7 @@ li{
   text-align: center;
   margin-top: 2em;
   }
- 
+
  .container2 .item1{
   flex-grow:1
    }
@@ -319,8 +319,8 @@ li{
   border: 2px solid black;
 }
 .button2 {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 3px solid black;
   margin-top: 3em;
   margin-left: 5em;
@@ -331,8 +331,8 @@ li{
 
 
 .button3 {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 3px solid black;
   margin-top: 3em;
   margin-left: 5em;
@@ -341,8 +341,8 @@ li{
 }
 
 .button4{
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 3px solid black;
   margin-top: 2em;
   margin-left: 15em;
@@ -389,8 +389,8 @@ li{
 }
 
 .button1 {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 2px solid black;
 }
 
@@ -454,28 +454,28 @@ position:absolute; right:20px;
   text-align: right;
  }
   .container2-2 > .item1-1{
-  background-image: url('Image/1.jpeg');
+  background-image: url('../Image/1.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
  }
    .container2-2 > .item2-2{
-  background-image: url('Image/2.jpeg');
+  background-image: url('../Image/2.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
  }
    .container3-3 > .item1-1{
-  background-image: url('Image/3.jpeg');
+  background-image: url('../Image/3.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
  }
     .container3-3 > .item2-2{
-  background-image: url('Image/4.jpeg');
+  background-image: url('../Image/4.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -523,11 +523,11 @@ position:absolute; right:20px;
   border: 1px solid black;
 }
  @media screen and (max-width:400px){
-   
+
   .logo{
         display: block;
         margin-left: 120pt;
-  }  
+  }
   .button{
     margin-top: 10pt;
     padding: 10px 20px;
@@ -569,6 +569,3 @@ position:absolute; right:20px;
  }
 
  }
-
-
-
