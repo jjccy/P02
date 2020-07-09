@@ -88,6 +88,11 @@ img {
   height: auto;
 }
 
+.validate-holder {
+  position:fixed;
+  top: -100em;
+}
+
 .bE-link {
   font-weight: 400;
   text-decoration: none;
