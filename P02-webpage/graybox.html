@@ -13,7 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Confirm</title>
+    <title>Graybox</title>
     <!--
     Website for IAT 339 P02
     Author Jimmy Chu, Jay Zhao
@@ -23,18 +23,19 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type = "text/css" href="css/normalize.css">
-    <link rel="stylesheet" type = "text/css" href="css/bElements.css">
-    <link rel="stylesheet" type = "text/css" href="css/confirm.css">
-    <link rel="stylesheet" type = "text/css" href="css/main-nav.css">
-    <link rel="stylesheet" type = "text/css" href="css/footer.css">
-
     <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script  src="script/main-nav.js"></script>
+    <script  src="script/horizontal-scroll.js"></script>
 
+    <link rel="stylesheet" href="css/main-nav.css">
+    <link rel="stylesheet" type = "text/css" href="css/normalize.css">
+    <link rel="stylesheet" type = "text/css" href="css/bElements.css">
+    <link rel="stylesheet" type = "text/css" href="css/footer.css">
+    <link rel="stylesheet" type = "text/css" href="css/graybox.css">
 
   </head>
   <body>
+
 
     <!--
     insepration of this animation is from css trick:
@@ -102,12 +103,87 @@
     <!-- navgation bar ends here -->
 
 
-    <div class="container">
-      <img src="img/smile.jpg" alt="smile">
-      <h1>Congratulations!</h1>
-      <p>Your booking has been submitted. You will receive an email confirmation within 30 minutes.</p>
-    </div>
-    <br><br><br><br><br><br><br><br>
+    <!-- start of promotion section -->
+
+    <section class="promotion-section">
+      <h1>HEADING1</h1>
+
+
+      <div id="elem" class="flex-box">
+
+        <div id="outer" class="flex-spaceholder-max">
+          <div id="inner">
+
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/gray.jpg" alt="gray">
+                </a>
+                <p class="flex-spaceholder-max">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+
+              </div>
+            </div>
+
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/gray.jpg" alt="gray">
+                </a>
+                <p class="flex-spaceholder-max">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+                </p>
+
+              </div>
+            </div>
+
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/gray.jpg" alt="gray">
+                </a>
+                <p class="flex-spaceholder-max">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+
+              </div>
+            </div>
+
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/gray.jpg" alt="gray">
+                </a>
+                <p class="flex-spaceholder-max">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+
+              </div>
+            </div>
+
+            <div class="promotion-item">
+              <div class="flex-box">
+                <a href="roomReview.html" class="flex-spaceholder-min">
+                  <img src="img/gray.jpg" alt="gray">
+                </a>
+                <p class="flex-spaceholder-max">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+
+              </div>
+            </div>
+
+          </div> <!-- end of inner -->
+        </div> <!-- end of outer -->
+
+      </div> <!-- end of elem -->
+    </section>
+
+    <!-- end of promotion section -->
+
 
     <!-- footer starts here -->
 
@@ -137,12 +213,12 @@
       <div class="flex-spaceholder-max right-footer flex-box">
         <div class="footer-nav flex-box flex-spaceholder-min">
           <a href="index.html" class="flex-spaceholder-max">HOME</a>
-         <!-- <a href="room-list.html" class="flex-spaceholder-max">ROOMS</a> -->
-         <a href="P02-Step1/Sitemap.html" class="flex-spaceholder-max">SITE MAP</a>
-         <a href="P02-Step1/UserGoals&WireFrames.html" class="flex-spaceholder-max">WIREFRAMES</a>
-         <a href="P02-Step1/Template.html" class="flex-spaceholder-max">STYLE GUIDE</a>
-         <a href="P02-Step1/citation.html" class="flex-spaceholder-max">CITATION</a>
-         <a href="https://github.com/jjccy/P02" class="flex-spaceholder-max">GIT</a>
+          <!-- <a href="room-list.html" class="flex-spaceholder-max">ROOMS</a> -->
+          <a href="P02-Step1/Sitemap.html" class="flex-spaceholder-max">SITE MAP</a>
+          <a href="P02-Step1/UserGoals&WireFrames.html" class="flex-spaceholder-max">WIREFRAMES</a>
+          <a href="P02-Step1/Template.html" class="flex-spaceholder-max">STYLE GUIDE</a>
+          <a href="P02-Step1/citation.html" class="flex-spaceholder-max">CITATION</a>
+          <a href="https://github.com/jjccy/P02" class="flex-spaceholder-max">GIT</a>
         </div>
         <a href="order-page-3.html" class="footer-button flex-spaceholder-min">MODIFY RESERVATION</a>
       </div>
@@ -172,7 +248,6 @@
     </footer>
 
     <!-- end of footer section -->
-
 
   </body>
 
